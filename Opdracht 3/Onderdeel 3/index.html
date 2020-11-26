@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+    <body>
+        <!-- Opdracht 7 (Maak een reserveringsformulier om een sport te reserveren.
+            7. Maak een reserveringsformulier om een sport te reserveren. In dit formulier
+            willen we graag het volgende weten:
+            ● Naam van dat persoon
+            ● Off hij/zij lidmaatschap heeft
+            ● E-mail van dat persoon
+            ● Type sport om te reserveren. Keuze uit: tafeltennis, badminton of squash
+            ● Datum en tijdstip om te reserveren
+            ● Een checkbox waarbij de gebruiker akkoord gaat over de reserverings
+            voorwaardes
+            ● Een submit knop-->
+    <section id="formulier">
+      
+        <form>
+            
+            <fieldset>
+                <legend>Reserveringsformulier</legend>
+            <br>
+            <label for="vnaam">Voornaam:</label>
+            <input type="text" placeholder="Voornaam">
+            <br>
+            <br>
+            <label for="vnaam">Bent u al lid?</label>
+            <br>
+            <input type="checkbox" id="Ja" name="Ja" value="Ja">
+            <label for="ja">Ja, ik ben lid</label><br>
+            <input type="checkbox" id="Ja" name="Ja" value="Ja">
+            <label for="lid">Nee, ik ben geen lid</label><br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Vul uw emailadres in">
+            <br>
+            <br>
+            <section>
+            <label for="sport">Welke sport?</label>
+                <select id="sport" name="sport">
+                <option value="tafel">Tafeltennis</option>
+                <option value="badmin">Badminton</option>
+                <option value="squash">Squash</option>
+                </select>
+            </section>
+            <br>
+                <section>
+                <label for="reserveren">Voor wanneer wilt u reserveren?</label>
+                <input type="datetime-local">
+                </section>
+            <br>
+                <section>
+                <label for="Akkoord">Ik ga akkoord met de voorwaardes</label>
+                <input type="checkbox">
+                </section>
+            <br>
+            <input type="submit" name="" id="">    
+            </fieldset>    
+            </form>
+            </section>    
+
+            <!--8. Maak een reserverings formulier om een boek te reserveren. In dit formulier
+                willen we graag het volgende weten:
+                ● Naam van dat persoon
+                ● Telefoonnummer
+                ● E-mail van dat persoon
+                ● Naam van dat boek
+                ● Aantal boeken om te reserveren. Het aantal moet minimaal 1 en maximaal 5
+                zijn.
+                ● Een submit knop  -->
+          
+    <section id="boekenformulier">
+        
+        <form action="/">
+        <fieldset>
+            <legend>Reserverings formulier boeken</legend>
+            
+            <!-- voornaam -->
+            <div>
+                <label for="vnaam">Voornaam:</label>
+                <input type="text" id="vnaam" name="vnaam" placeholder="Voornaam"><br><br>
+            </div>
+
+            <!-- achternaam -->
+            <div>
+                <label for="anaam">Achternaam:</label>
+                <input type="text" id="anaam" name="anaam" placeholder="Achternaam"><br><br>
+            </div>
+
+            <!-- telefoonnummer -->
+            <div>
+                <label for="tnummer">Telefoonnummer:</label>
+                <input type="tel" id="tnummer" name="tnummer" placeholder="Telefoonnummer"><br><br>
+            </div>
+
+            <!-- email -->
+            <div>
+                <label for="email">Email:</label> 
+                <input type="email" name="email" id="email" placeholder="Email"><br><br>
+            </div>
+
+            <!-- naam van het boek -->
+            <div>
+                <label for="boek">Naam van het boek:</label>
+                <input type="text" name="boek" id="boek" placeholder="Naam van het boek"><br><br>
+            </div>
+
+            <!-- aantal boeken om te serveren -->
+            <div>
+                <label for="quantity">Aantal boeken om te reserveren:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="5"><br><br>
+            </div>
+
+            <!-- submit -->
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+    </section>
+    
+            <br>
+            <br>
+
+            <!-- Opdracht 9 Bouw nu zelf een formulier met wat je hiervoor hebt geleerd. -->
+            
+            <section id="eigenformulier">
+                <form action="/">
+                <fieldset>
+                        <legend>Thuisbezorgd</legend>
+
+                <!-- Voornaam -->
+                <div>
+                    <label for="vnaam">Voornaam</label>
+                    <input type="text" name="vnaam" id="vnaam" placeholder="Voornaam"><br><br>
+                </div>
+                <!-- Achternaam -->
+                <div>
+                    <label for="anaam">Achternaam</label>
+                    <input type="text" name="anaam" id="anaam" placeholder="Achternaaam"><br><br>
+                </div>
+                <!-- address -->
+                <div>
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address" placeholder="Address"><br><br>
+                </div>
+                <!-- Postcode -->
+                <div>
+                    <label for="zip">Postcode</label>
+                    <input type="text" name="zip" id="zip" placeholder="Postcode"><br><br>
+                </div>
+                <!-- Stad -->
+                <div>
+                    <label for="Stad">Welke stad?</label>
+                    <select id="stad" name="stad">
+                        <option value="010">Rotterdam</option>
+                        <option value="020">Amsterdam</option>
+                        <option value="030">Utrecht</option>
+                    </select>
+                </div><br>
+                <!-- Welke eten -->
+                <div>
+                    <label for="Eten">Wat wilt u bestellen?</label>
+                    <select id="Eten" name="Eten">
+                        <option value="Nasi">Nasi</option>
+                        <option value="NasiS">Nasi Speciaal</option>
+                        <option value="Bami">Bami</option>
+                        <option value="BamiS">Bami Speciaal</option>
+                    </select>
+                </div>
+                <!-- Sambal -->
+                <p>Wilt u sambal bij het gerecht?</p>
+                <div>
+                    <input type="radio" id="Sambal" name="Sambal" value="Sambal">
+                    <label for="Sambal">Ja</label>
+                    <input type="radio" id="Sambal" name="Sambal" value="Sambal">
+                    <label for="Sambal">Nee</label><br>
+                </div><br>
+                <!-- ontvangen -->
+                <div>
+                    <label for="ontvangen">Voor wanner wilt u bestellen?</label>
+                    <input type="datetime-local" name="ontvangen" id="ontvangen">
+                </div><br>
+                <!-- betalen -->
+                <div>
+                <label for="betalen">Hoe wilt u betalen?</label>
+                    <select id="betalen" name="betalen">
+                        <option value="Ideal">Ideal</option>
+                        <option value="Contant">Contant</option>
+                        <option value="Visa">Visa</option>
+                        <option value="Mastercard">Mastercard</option>
+                     </select>
+                </div>
+                <br>
+            <!-- bevestig u bestelling -->
+            <div>
+                <input type="submit" value="Nu bestellen">
+            </div>
+
+
+                
+             </fieldset>
+        </form>
+        </section>
+            <p>hoi</p>
+
+        
+         </body>
+    </html>
+</body>
+</html>
