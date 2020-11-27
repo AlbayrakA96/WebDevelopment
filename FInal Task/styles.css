@@ -1,0 +1,23 @@
+#wrapper {
+    background-color: grey
+    ;
+}
+
+#top-content {text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+
+}
+
+.menu {
+    color: red;
+}
+
+.inleiding {
+    font-style: italic;
+}
+
+#menukaart {
+    flex-direction: column;
+
+}
