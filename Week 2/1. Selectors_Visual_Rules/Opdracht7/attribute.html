@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+/* All divs with a `lang` attribute are bold. */
+div[lang] {
+  font-weight: bold;
+}
+
+/* All divs without a `lang` attribute are italicized. */
+div:not([lang]) {
+  font-style: italic;
+}
+
+/* All divs in US English are blue. */
+div[lang~="en-us"] {
+  color: blue;
+}
+
+/* All divs in Portuguese are green. */
+div[lang="pt"] {
+  color: green;
+}
+
+/* All divs in Chinese are red, whether
+   simplified (zh-CN) or traditional (zh-TW). */
+div[lang|="zh"] {
+  color: red;
+}
+
+/* All divs with a Traditional Chinese
+   `data-lang` are purple. */
+/* Note: You could also use hyphenated attributes
+   without double quotes */ 
+div[data-lang="zh-TW"] {
+  color: purple;
+}
+</style>
+<body>
+    <header>
+        <h1>Voorbeeld van een Attribute-Selector</h1>
+    </header>
+
+    <main>
+        <p class="voorbeeld">Css code voorbeeld</p>
+        <pre>
+            /* All divs with a `lang` attribute are bold. */
+            div[lang] {
+            font-weight: bold;
+            }
+
+            /* All divs without a `lang` attribute are italicized. */
+            div:not([lang]) {
+            font-style: italic;
+            }
+
+            /* All divs in US English are blue. */
+            div[lang~="en-us"] {
+            color: blue;
+            }
+
+            /* All divs in Portuguese are green. */
+            div[lang="pt"] {
+            color: green;
+            }
+
+            /* All divs in Chinese are red, whether
+            simplified (zh-CN) or traditional (zh-TW). */
+            div[lang|="zh"] {
+            color: red;
+            }
+
+            /* All divs with a Traditional Chinese
+            `data-lang` are purple. */
+            /* Note: You could also use hyphenated attributes
+            without double quotes */ 
+            div[data-lang="zh-TW"] {
+            color: purple;
+            }
+        </pre>
+
+        <p class="voorbeeld">Html code voorbeeld</p>
+        <pre>
+            &lt;div lang=&quot;en-us en-gb en-au en-nz&quot;&gt;Hello World!&lt;/div&gt;
+            &lt;div lang=&quot;pt&quot;&gt;Ol&aacute; Mundo!&lt;/div&gt;
+            &lt;div lang=&quot;zh-CN&quot;&gt;&#x4E16;&#x754C;&#x60A8;&#x597D;&#xFF01;&lt;/div&gt;
+            &lt;div lang=&quot;zh-TW&quot;&gt;&#x4E16;&#x754C;&#x60A8;&#x597D;&#xFF01;&lt;/div&gt;
+            &lt;div data-lang=&quot;zh-TW&quot;&gt;&#x4E16;&#x754C;&#x60A8;&#x597D;&#xFF01;&lt;/div&gt;
+        </pre>
+
+        <p class="voorbeeld">Resultaat</p>
+        
+            <div lang="en-us en-gb en-au en-nz">Hello World!</div>
+            <div lang="pt">Olá Mundo!</div>
+            <div lang="zh-CN">世界您好！</div>
+            <div lang="zh-TW">世界您好！</div>
+            <div data-lang="zh-TW">世界您好！</div>
+        
+    </main>
+    
+</body>
+</html>

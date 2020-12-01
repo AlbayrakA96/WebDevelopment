@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 8. cascade en inheritance</title>
+</head>
+<style>
+    h1 {
+        color: blue; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; text-align: center;
+    }
+
+    .test {
+        color: blue;
+    }
+
+    span {
+        color: red;
+    }
+
+</style>
+
+<body>
+    <head>
+        <h1>Opdracht 8. cascade en inheritance</h1>
+    </head>
+<hr>
+
+    <main>
+        
+            <h2>Leg in eigen woorden uit wat met cascade en inheritance wordt bedoeld. Maak voorbeelden om je antwoord uit te leggen.</h2>
+<hr>            
+        <div>    
+            <h2>Cascade</h2>
+            <p>Bij Cascade gaat het om de volgorde die in je CSS staat; 
+                Wanneer je 2 dezelfde selectors heb met dezelfde waarde, wordt het onderste rule doorgevoerd. </p>
+        </div>
+        <div>
+            <h5>Voorbeeld:</h5>
+            <pre>
+                h1 {
+                    color: red;
+                }
+
+                h1 { 
+                    color: blue;
+                }
+            </pre>
+            <img src="./cascade.png" alt="cascade" width="450" height="250">
+
+
+        </div>
+<hr>
+        <div>
+            <h2>inheritance</h2>
+            <p>Wanneer je een element target zoals body, wordt alles wat binnen de body valt ook aangesproken, behalve als je het apart target</p>
+        </div>
+
+        <div>
+            <h5>Voorbeeld</h5>
+            <pre>
+                .test {
+                        color: blue;
+                    }
+                    
+                span {
+                        color: red;
+                    }    
+            </pre>            
+                <div class="test">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, iste quam cupiditate perspiciatis illum debitis officia corrupti deleniti sequi assumenda?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsa!</p>
+                    <p>Lorem ipsum, <span>dolor sit amet consectetur adipisicing elit.</span>  Harum, quos!</p>
+                </div>
+            
+        </div>
+
+    </main>
+    
+</body>
+</html>

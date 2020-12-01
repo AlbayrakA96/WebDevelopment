@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 7 Universal-Selector</title>
+</head>
+<style>
+* [lang^=en] {
+  color: green;
+}
+
+.voorbeeld {
+    font-size: large; color: teal;
+}
+
+*.warning {
+  color: red;
+}
+
+*#maincontent {
+  border: 1px solid blue;
+}
+
+.floating {
+  float: left
+}
+
+/* automatically clear the next sibling after a floating element */
+.floating + * {
+  clear: left;
+}
+</style>
+<body>
+    <header>
+        <h1>Voorbeeld van een Universal-Selector</h1>
+    </header>
+
+    <main>
+        <p class="voorbeeld">Css code voorbeeld</p>
+        <pre>
+            * [lang^=en] {
+                color: green;
+              }
+              
+              *.warning {
+                color: red;
+              }
+              
+              *#maincontent {
+                border: 1px solid blue;
+              }
+              
+              .floating {
+                float: left
+              }
+              
+              /* automatically clear the next sibling after a floating element */
+              .floating + * {
+                clear: left;
+              }
+        </pre>
+
+        <p class="voorbeeld">Html code voorbeeld</p>
+        <pre>
+              &lt;p class=&quot;warning&quot;&gt;
+                &lt;span lang=&quot;en-us&quot;&gt;A green span&lt;/span&gt; in a red paragraph.
+              &lt;/p&gt;
+              &lt;p id=&quot;maincontent&quot; lang=&quot;en-gb&quot;&gt;
+                &lt;span class=&quot;warning&quot;&gt;A red span&lt;/span&gt; in a green paragraph.
+              &lt;/p&gt;  
+        </pre>
+
+        <p class="voorbeeld">Resultaat</p>
+        <div>
+            <p class="warning">
+                <span lang="en-us">A green span</span> in a red paragraph.
+              </p>
+              <p id="maincontent" lang="en-gb">
+                <span class="warning">A red span</span> in a green paragraph.
+              </p>
+        </div>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 6 Adjacent-Selector</title>
+    <link rel="stylesheet" href="adjacent.css">
+</head>
+<body>
+    <h2>Voorbeeld Adjacent-Selector</h2>
+    
+    <div>
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+    </div>
+
+    <p>Paragraph 3. Not in a div.</p>
+    <p>Paragraph 4. Not in a div.</p>
+
+    <figure>
+        <figcaption>voorbeeld Adjacent-Selector in HTML</figcaption>
+        <xmp>
+            <div>
+                <p>Paragraph 1 in the div.</p>
+                <p>Paragraph 2 in the div.</p>
+            </div>
+        
+            <p>Paragraph 3. Not in a div.</p>
+            <p>Paragraph 4. Not in a div.</p>
+        </xmp>
+    </figure>
+    
+    
+    <figure>
+        <figcaption>voorbeeld Adjacent-Selector in CSS</figcaption>
+        <xmp>
+            div + p {
+            background-color: yellow;
+            }
+        </xmp>
+    </figure>
+
+</body>
+</html>

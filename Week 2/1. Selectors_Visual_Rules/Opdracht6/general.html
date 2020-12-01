@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 6 General/selector</title>
+</head>
+<style>
+    p ~ span {
+  color: red;
+}
+</style>
+<body>
+    <div>
+        <h2>The general sibling combinator (~) separates two selectors and matches all iterations of the second element, 
+            that are following the first element (though not necessarily immediately), and are children of the same parent element</h2>
+    </div>
+       
+    <div class="voorbeeld">
+        <pre>
+        p ~ span {
+            color: red;
+          }
+          
+          &lt;span&gt;This is not red.&lt;/span&gt;
+          &lt;p&gt;Here is a paragraph.&lt;/p&gt;
+          &lt;code&gt;Here is some code.&lt;/code&gt;
+          &lt;span&gt;And here is a red span!&lt;/span&gt;
+          &lt;span&gt;And this is a red span!&lt;/span&gt;
+          &lt;code&gt;More code...&lt;/code&gt;
+          &lt;div&gt; How are you? &lt;/div&gt;
+          &lt;p&gt; Whatever it may be, keep smiling. &lt;/p&gt;
+          &lt;h1&gt; Dream big &lt;/h1&gt;
+          &lt;h2&gt; that&apos;s all. &lt;/h2&gt; 
+          &lt;span&gt;And yet again this is a red span!&lt;/span&gt;
+        </pre>
+    </div>
+    
+    
+    
+    
+    
+        <div>
+            <span>This is not red.</span>
+            <p>Here is a paragraph.</p>
+            <code>Here is some code.</code>
+            <span>And here is a red span!</span>
+            <span>And this is a red span!</span>
+            <code>More code...</code>
+            <div> How are you? </div>
+            <p> Whatever it may be, keep smiling. </p>
+            <h1> Dream big </h1>
+            <h2> that's all. </h2> 
+            <span>And yet again this is a red span!</span>
+        </div>
+</body>
+</html>
