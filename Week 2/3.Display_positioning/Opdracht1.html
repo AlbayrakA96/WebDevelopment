@@ -6,9 +6,25 @@
     <title>Opdracht 1. Display & Positioning </title>
 </head>
 <style>
+dl {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
 
+dd {
+    font-size: larger;
+}
+
+nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
 </style>
 <body>
+    <nav>
+        <a href="../index.html">Inhoudsopgave</a>
+    </nav>
     <header>
         <h1>Opdracht 1. Display & Positioning</h1>
     </header>
@@ -22,13 +38,29 @@ Welke position properties zijn er? Leg voor elke position property uit wat het d
             Geef ook aan welke default position waarde elementen hebben die je gebruikt in html.
         </h3>
 
+        <h4><a href="https://www.youtube.com/watch?v=gD3G67oPg-w">hier</a> is een link naar een video met uitleg van positioning</h4>
+
         <dl>
             <dt>1. Static</dt>
+                <dd>The element is positioned according to the normal flow of the document. The top, right, bottom, left, and z-index properties have no effect. This is the default value.</dd>
+                <dd>De default position waarde is de flow van het document </dd>
             <dt>2. Relative</dt>
+                <dd>The element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements; thus, the space given for the element in the page layout is the same as if position were static.
+                    This value creates a new stacking context when the value of z-index is not auto. Its effect on table-*-group, table-row, table-column, table-cell, and table-caption elements is undefined.</dd>
+                <dd>De default position waarde is de flow van het document en dan aanspreekbaar met de top, bottom, right, left values</dd>
             <dt>3. Absolute</dt>
+                <dd>The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the initial containing block. Its final position is determined by the values of top, right, bottom, and left.
+                    This value creates a new stacking context when the value of z-index is not auto. The margins of absolutely positioned boxes do not collapse with other margins.</dd>
+                <dd>The element is verwijderd van de flow van het document, </dd>
             <dt>4. Fixed</dt>
+                <dd>The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to the initial containing block established by the viewport, except when one of its ancestors has a transform, perspective, or filter property set to something other than none (see the CSS Transforms Spec), in which case that ancestor behaves as the containing block. (Note that there are browser inconsistencies with perspective and filter contributing to containing block formation.) Its final position is determined by the values of top, right, bottom, and left.
+                    This value always creates a new stacking context. In printed documents, the element is placed in the same position on every page.</dd>
             <dt>5. Sticky</dt>
+                <dd>The element is positioned according to the normal flow of the document, and then offset relative to its nearest scrolling ancestor and containing block (nearest block-level ancestor), including table-related elements, based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements.
+                    This value always creates a new stacking context. Note that a sticky element "sticks" to its nearest ancestor that has a "scrolling mechanism" (created when overflow is hidden, scroll, auto, or overlay), even if that ancestor isn't the nearest actually scrolling ancestor. This effectively inhibits any "sticky" behavior (see the GitHub issue on W3C CSSWG).</dd>
         </dl>
+
+        
     </main>
 </body>
 </html>
