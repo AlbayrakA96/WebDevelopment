@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 7: Display & Positioning</title>
+</head>
+<style>
+
+.container {
+    position: relative;
+    margin-top: 50px;
+}
+
+.tekst {
+    position: absolute;
+    top: 30px;
+    left: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 40px;
+    
+    
+    
+}
+
+.turkije {
+    color: red;
+}
+
+.tekst2 {
+    color: yellow;
+    font-size: 14px;
+    margin-top: 1px;
+}
+
+.tekst1 {
+    font-size: 30px;
+    padding-bottom:  0px;
+    margin: 0%
+    
+    ;
+
+}
+
+</style>
+<body>
+    <header>
+        <h1>Opdracht 7: Display & Positioning</h1>
+    </header>
+
+    <main>
+        <h3>Opdracht 7
+            Zie de onderstaande image met tekst. Kun jij dit namaken? Gebruik zelf een foto van een zonnige bestemming. Gebruik position, maar je mag geen z-index toepassen.
+            </h3>
+        <div>
+            <img src="./greece.png" alt="voorbeeld">
+        </div>
+        
+        
+        <div class="container">
+            <img src="./turkey.jpg" alt="turkey">
+        <div class="tekst">
+            <p class="tekst1">Groeten uit <span class="turkije">Turkije</span>!</p>
+            <p class="tekst2">Kom je ook hier vakantie vieren?</p>
+
+        </div>
+        </div>
+
+
+        
+    </main>
+    
+</body>
+</html>
