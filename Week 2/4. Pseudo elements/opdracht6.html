@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 6: pseudo-elements</title>
+</head>
+<style>
+
+    .figuur{
+        content: "";
+        color: white;
+        position: relative;
+        height: 100px;
+        width: 100px;
+        background-color: black;
+        border-radius: 50%;
+        margin: 50px;
+    }
+
+    .circle::after {
+        content: "";
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 50%;
+        top: 25px;
+
+        margin-left: 70%;
+
+    }
+
+    .circle::before {
+        content: "";
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 50%;
+        top: 25px;
+        margin-left: -20px;
+
+    }
+
+    .figuur::before {
+        position: absolute;
+        content: "1";
+        color: rgb(255, 255, 255);
+        margin-left: 44px;
+        margin-top: 30px;
+        font-size: 30px;
+    }
+
+    /* .figuur2::before {
+        position: absolute;
+        content: "2";
+        color: rgb(255, 0, 0);
+        margin-left: 44px;
+        margin-top: 30px;
+        font-size: 30px;
+    } */
+
+    .point::after {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        margin-top: 40px;
+    }
+
+    .point2::after {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        margin-top: 55px;
+        margin-left: 90px;
+    }
+
+    p::before{
+        color: white;
+        position: absolute;
+        
+
+    }
+
+
+</style>
+</head>
+<body>
+
+<Div class="figuur">
+    
+    <div class="point">
+        <div class="point2">
+            <div class="circle">
+                
+            </div>
+        </div>
+    </div>
+</Div>
+
+<Div class="figuur">
+    <div class="point">
+        <div class="point2">
+            <div class="circle">
+            </div>
+        </div>
+    </div>
+</Div>
+
+<Div class="figuur">
+    <div class="point">
+        <div class="point2">
+            <div class="circle">
+            </div>
+        </div>
+    </div>
+</Div>
+
+<Div class="figuur">
+    <div class="point">
+        <div class="point2">
+            <div class="circle">
+            </div>
+        </div>
+    </div>
+</Div>
+
+
+</body>
+</html>

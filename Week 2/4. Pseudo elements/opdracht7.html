@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht7: Pseudo-elements</title>
+</head>
+<style>
+    .vierkant1 {
+        position: relative;
+        height: 200px;
+        width: 200px;
+        background-color:red;
+        margin-left: 100px;
+        margin-top: 100px;
+        transform: rotate(-10deg);
+    }
+
+    .vierkant2::before {
+        content: "";
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        background-color:red;
+        transform: rotate(60deg)
+
+    }
+
+    .vierkant3::before {
+        content: "";
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        transform: rotate(15deg);
+    }
+
+</style>
+<body>
+    <header>
+        <h1>Opdracht 7: Pseudo-elements</h1>
+    </header>
+    
+    <main>
+
+        <h3>Maak de opdracht na.</h3>
+
+        <pre>
+            .vierkant1 {
+                position: relative;
+                height: 200px;
+                width: 200px;
+                background-color:red;
+                margin-left: 100px;
+                margin-top: 100px;
+                transform: rotate(-10deg);
+            }
+        
+            .vierkant2::before {
+                content: "";
+                position: absolute;
+                height: 200px;
+                width: 200px;
+                background-color:red;
+                transform: rotate(60deg)
+        
+            }
+        
+            .vierkant3::before {
+                content: "";
+                position: absolute;
+                height: 200px;
+                width: 200px;
+                background-color: red;
+                transform: rotate(15deg);
+            }
+        </pre>
+
+    <div class="vierkant1">
+        <div class="vierkant2">
+            <div class="vierkant3">
+
+            </div>
+        </div>
+    </div>
+    </main>
+</body>
+</html>

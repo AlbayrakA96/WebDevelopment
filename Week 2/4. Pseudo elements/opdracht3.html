@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 3: Pseudo elements.</title>
+</head>
+<style>
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.wel::before {
+    content: "@";
+    color: red;
+    font-size: larger;
+
+}
+
+.wel::after {
+    content: "@";
+    color: red;
+    font-size: larger;
+}
+
+.wel2::before {
+     content: "?";
+     color: blue;
+     font-size: larger;
+}
+
+.wel2::after {
+    content: "?";
+    color: blue;
+    font-size: larger;
+}
+
+.blauw::first-line {
+    color: blue;
+}
+
+h4.titel + p::first-letter {
+    background-color: aqua;
+   font-size: larger;
+}
+
+</style>
+<body>
+    <nav>
+        <a href="../index.html">Inhoudsopgave</a>
+    </nav>
+    <header>
+        <h1>Opdracht 3: Pseudo elements.</h1>
+    </header>
+
+    <main>
+        <!-- Kun je van al deze pseudo-elementen een voorbeeld maken? -->
+        <h3>Er zijn aldus 14 verschillende pseudo elementen. Je hebt ze in de voorgaande opdracht reeds opgezocht en uitgezocht wat ze doen. Kun je van al deze pseudo-elementen een voorbeeld maken?</h3>
+<hr>
+        <!-- ::before & ::after -->
+       <div> 
+        <h4>::before  en ::after pseudo-element</h4>
+        <p class="wel">Deze zin staat tussen rode @ in</p>
+        <p class="niet">Tussen deze zin staan geen haakjes</p>
+        <p class="wel2">Deze zin staat tussen blauwe vraagtekens</p>
+        <p class="niet">Tussen deze zin staan geen vraagtekens</p>
+       </div>
+
+
+       <!-- ::firstline  -->
+       <div>
+           <h4>::first-line pseudo-element</h4>
+           <p class="blauw">De ::first-line pseudo-element target alleen de eerste zin, en maakt het blauw. <br>
+               Maar de volgende zin niet. De volgende zin wordt niet getarget door de ::firstline element</p>
+       </div>
+        <!-- ::first-letter -->
+
+       <div>
+           <h4 class="titel">::first-letter element</h4>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eos corrupti esse, cumque beatae suscipit hic enim est atque debitis ipsam! Porro blanditiis fugiat minima modi similique eum quos, dolor maxime nam provident cumque, molestias a aperiam, voluptas saepe natus.</p>
+       </div>
+    </main>
+    
+</body>
+</html>

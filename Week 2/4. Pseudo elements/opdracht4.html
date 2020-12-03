@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 4: Pseudo elements</title>
+</head>
+<style>
+
+.container {
+    width: 500px;
+    height: 70px;
+    background-color: blue;
+    position: relative;
+    
+}
+
+.container::before {
+    content: "";
+    display: block;
+    width: 400px;
+    height: 55px;
+    background-color: darkblue;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    
+}
+
+.box1::before {
+    content: "";
+    width: 400px;
+    display: block;
+    height: 55px;
+    background-color: darkblue;
+    position: absolute;
+    right: 20px;
+
+}
+
+p:hover {
+  color: blue;
+  
+  
+}
+
+p::before {
+    content: "Button";
+    font-size: 40px;
+    
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    
+}
+
+
+
+</style>
+<body>
+    <header>
+        <h1>Opdracht 4: Pseudo elements.</h1>
+    </header>
+
+    <main>
+        
+        <div class="hover">
+        <a href="../index.html">
+        <div class="container">
+            <div class="box1">
+                <p></p>
+            </div>
+        </div>
+        </a>
+        </div>
+    
+    </main>
+    
+</body>
+</html>
