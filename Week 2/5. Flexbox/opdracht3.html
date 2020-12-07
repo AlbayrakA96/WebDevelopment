@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opdracht 1: Flexbox</title>
+    <title>Opdracht 3: Flexbox</title>
 </head>
 <style>
 
 ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     background-color: rgb(235, 216, 113);
     list-style-type: none;
     margin: 0%;
@@ -28,38 +28,46 @@ li {
 }
     
 .one {
-    order: 1;
-    margin-left: 2px;
+    order: 6;
+    /* margin-left: 2px; */
 }
 
 .two {
-    order: 2;
+    order: 5;
+    flex-grow: 3;
+    text-align: center;
 
 }
 
 .three {
-    order: 3;
+    order: 4;
+    
+    
 }
 
 .four {
-    order: 4;
+    order: 3;
 }    
 
 .five {
-    order: 5;
+    order: 2;
 }
 
+.six {
+    order: 1;
+}
 </style>
 <body>
     <header>
-        <h1>Opdracht 1: Flexbox.</h1>
+        <h1>Opdracht 3: Flexbox.</h1>
     </header>
     
 
     <main>
-        <h2>Opdracht 1</h2>
-        <p>Zie het onderstaande voorbeeld en maak het na met flex. Gebruik geen width, height of line-height.</p>
-            <img src="./box.png" alt="">
+        <h2>Opdracht 3.</h2>
+        <p>Zie het onderstaande voorbeeld, een van de items is breder dan de rest. Maak het na met flex. Gebruik geen width, height of line-height.
+        </p>
+            <img src="./box3.png" alt="">
 
             <ul>
                 <li class="one">1</li>
@@ -67,6 +75,7 @@ li {
                 <li class="three">3</li>
                 <li class="four">4</li>
                 <li class="five">5</li>
+                <li class="six">6</li>
             </ul>
     </main>
 

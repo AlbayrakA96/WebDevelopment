@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 5: Flexbox.</title>
+</head>
+    <style>
+        
+        
+
+        .container  {
+            display: flex;
+            background-color: blue;
+            align-items: stretch;
+            height: 300px;
+            margin: 30px;
+        }
+
+        .container2  {
+            display: flex;
+            background-color: blue;
+            align-items:flex-start;
+            height: 300px;
+            margin: 30px;
+        }
+
+        .container3  {
+            display: flex;
+            background-color: blue;
+            align-items:flex-end;
+            height: 300px;
+            margin: 30px;
+        }
+            
+
+        .item1, .item2, .item3, .item4, .item5 {
+            background-color:burlywood;
+            margin: 20px;
+            padding: 30px;
+        }
+    </style>
+<body>
+    <header>
+        <h1>Opdracht 5: Flexbox.</h1>
+    </header>
+
+    <main>
+            <h2>Align-items: stretch;</h2>
+        <div class="container">
+           
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+            <div class="item4">4</div>
+            <div class="item5">5</div>
+           
+        </div>
+
+            <h2>Align-items: flex-start;</h2>
+        <div class="container2">
+           
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+            <div class="item4">4</div>
+            <div class="item5">5</div>
+           
+        </div>
+
+        <h2>Align-items: flex-end;</h2>
+        <div class="container3">
+           
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+            <div class="item4">4</div>
+            <div class="item5">5</div>
+           
+        </div>
+    </main>
+</body>
+</html>

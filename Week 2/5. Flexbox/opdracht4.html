@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 4: Flexbox.</title>
+</head>
+    <style>
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            background-color: red;
+            border: solid 5px black;
+            margin-top: 40px;
+            margin-left: 10px;
+            justify-content: space-between;
+            padding: 0;
+
+        }
+
+        li {
+            font-size: 30px;
+            background-color: grey;
+            padding: 20px 30px 20px 30px;
+            margin: 0.5em;
+            border: solid 2px black;
+        }
+
+    #voorbeeld2 {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            background-color: red;
+            border: solid 5px black;
+            margin-top: 40px;
+            margin-left: 10px;
+            justify-content: flex-end;
+            padding: 0;
+
+    } 
+
+    #voorbeeld3 {
+            
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            background-color: red;
+            border: solid 5px black;
+            margin-top: 40px;
+            margin-left: 10px;
+            justify-content: space-evenly;
+            padding: 0;
+
+    }
+
+    </style>
+<body>
+    <header>
+        <h1>Opdracht 4: Flexbox</h1>
+    </header>
+
+    <main>
+         <h3>1. justify-content: space-between;</h3>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+        </ul>
+
+         <h3>2. justify-content: flex-end;</h3>
+        <ul id="voorbeeld2">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+        </ul>
+
+        <h3>2. justify-content: space-evenly;</h3>
+        <ul id="voorbeeld3">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+        </ul>
+
+    </main>
+    
+</body>
+</html>

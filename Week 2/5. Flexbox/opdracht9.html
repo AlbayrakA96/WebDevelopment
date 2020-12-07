@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 9: Flexbox.</title>
+</head>
+<style>
+        .container {
+            display: flex;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 880px;
+            background-color: darkgray;
+            border: solid 5px black;
+        }   
+
+        .zamasu, .ultra, .golden, .jiren {
+            
+            width: 200px;
+            margin: 10px;
+            padding-left: 0px;
+            
+        }
+        
+        p {
+            height: 200px;
+            width: 200px;
+            margin-bottom: 30px;
+            
+        }
+
+        h1 {
+            
+            height: 70px;
+            text-align: center;
+        }
+
+        button {
+            display: block;
+            background-color: black;
+            color: red;
+            /* font-size: 15px; */
+            width: 200px;
+            height: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        button:hover {
+            font-size: 120%;
+            background-color: yellow;
+            
+}
+
+</style>
+<body>
+    <header>
+        <h1 class="title">Opdracht 9: Flexbox.</h1>
+    </header>
+
+    <div class="container">
+        <div class="zamasu">
+            <img src="./zamasu.gif" alt="zamasu" width="200px" height="200px">
+            <h1>Zamasu</h1>
+            <p>Zamasu (ザマス Zamasu) is the Supreme Kai apprentice serving the Supreme Kai of Universe 10, Gowasu. He is also the former North Kai of Universe 10. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem, ipsum dolor.</p>
+            <a href="http://dbz.animegame.me/"><button>Play with Zamasu</button></a>
+        </div>
+
+        <div class="ultra">
+            <img src="./ultra.gif" alt="ultra" width="200px" height="200px">
+            <h1>Goku Ultra-Instinct </h1>
+            <p>Goku was born on Planet Vegeta, named Kakarot. He was the son of the Saiyan Bardock, and was sent to Earth due to Frieza destroying Planet Vegeta. His mission was to destroy it, but he was dropped on his head and forgot it,</p> 
+            <a href="http://dbz.animegame.me/"><button>Play with Goku</button></a>
+        </div>
+
+        <div class="golden">
+            <img src="./golden.gif" alt="golden" width="200px" height="200px">
+            <h1>Golden Frieza</h1>
+            <p>Frieza (フリーザ Furīza) is the emperor of Universe 7, who controlled his own imperial army and is feared for his ruthlessness and power. He is the descendant of Chilled, the second son of King Cold</p>
+            <a href="http://dbz.animegame.me/"><button>Play with Frieza</button></a>
+        </div>
+
+        <div class="jiren">
+            <img src="./jiren.gif" alt="jiren" width="200px" height="200px">
+            <h1>Jiren</h1>
+            <p>Jiren (ジレン Jiren), also known as Jiren The Gray (灰色のジレン Haiiro no Jiren), is a member of the Pride Troopers. He served as the main fighting antagonist in the Universe Survival Saga and as a major contestant in the Tournament of Power.</p>
+            <a href="http://dbz.animegame.me/" target="_blank"><button>Play with Jiren</button></a>
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
