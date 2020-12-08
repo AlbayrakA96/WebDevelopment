@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 5: Transitions</title>
+</head>
+<style>
+    .container {
+        width: 600px;
+        height: 350px;
+        border: solid 3px black;
+        position: relative;
+        background-image: url("graveyard.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+
+    }
+
+    .foto {
+        background-image: url("zombie.jpg");
+        width: 150px;
+        height: 105px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: solid black 5px;
+        position: absolute;
+    } 
+    
+    .window {
+        background-image: url("window.png");
+        height: 110px;
+        width: 150px;
+        position: absolute;
+        margin-top: 3px;
+        margin-left: 5px;
+        transition: transform 300ms ease-in-out;
+
+    }
+
+    .container:hover .window {
+        transform: translate(200px,150px) rotate(20deg)
+    }
+
+    .kleur {
+        width: 150px;
+        height: 110px;
+        position: absolute;
+        transition: background-color 1s ease-in 0.5s;
+        margin-top: 3px;
+        margin-left: 5px;
+    }
+
+    .container:hover .kleur {
+        background-color: rgba(88, 2, 2, 0.664);
+    }
+</style>
+<body>
+    <header>
+        <h1>Opdracht 5: Transitions</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="foto">
+
+            </div>
+            <div class="kleur">
+
+            </div>
+            <div class="window">
+
+            </div>
+        </div>
+
+    </main>
+    
+</body>
+</html>

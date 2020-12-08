@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opdracht 4: Transitions.</title>
+    <style>
+        body {
+            margin: 5%;
+        }
+
+        .container {
+            width: 750px;
+            height: 500px;
+            background-color: lightslategray;
+            position: relative;
+        }
+
+        .box {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(163, 149, 149);
+            margin-bottom: 25px;
+            position: absolute;
+            left: 350px;
+            top: 200px;
+        }
+
+        #box1 {
+            transition: 1s ease-in-out 0.2s, top 1s ease-in-out , top 2s ;
+        }
+
+        #box2 {
+            transition: 1s ease-in-out 0.2s, top 1s ease-in-out, top 2s;
+        }
+
+        #box3 {
+            transition: top 2s ease-in-out 0.5s, top 2s ease-in-out 0.5s, left 1s ease-in-out, left 0.5s ease-in-out;
+        }
+
+        .container:hover #box1 {
+            top: 0px;
+            left: 700px;
+        }
+
+        .container:hover #box2 {
+            top: 0px;
+            left: 0px;
+        }
+
+        .container:hover #box3 {
+            left: 0px;
+            top: 450px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <head>
+    
+    </head>
+
+    <br>
+    <h1>Opdracht 4: Transitions.</h1>
+    
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+    </div>
+  </body>
+</html>
