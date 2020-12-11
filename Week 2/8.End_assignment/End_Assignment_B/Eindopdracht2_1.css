@@ -1,0 +1,127 @@
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.grey {
+    background: #a0aec0;
+}
+
+.flexcontainerall {
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 100%;
+
+}
+
+
+/* MENU */
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4B86CB;
+    max-width: 300px;
+    padding: 20px;
+    height: 800px;
+}
+
+#menu .bordermenu {
+    width: 125%;
+    text-align: center;
+    margin-top: -30px;
+}
+#menu h2 {
+    padding-bottom: 10px;
+    color: white;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+
+
+#menu ul{
+    list-style: none;
+    color: white;
+}
+
+#menu ul li {
+    margin-left: -30px;
+    padding: 10px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+
+
+.membersandinformation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin-left: 150px;
+}
+
+
+/* MEMBERS */
+
+#members {
+width: 120%;
+}
+
+
+#members h1 {
+    text-align: center;
+    color:  #4B86CB;
+    font-size: 40px;
+}
+
+
+#members table {
+    width: 100%;
+    border: 1px lightgray solid;
+}
+
+#members table th {
+    text-align: left;
+     
+}
+
+#members .table_padding {
+    padding-right: 20px;
+}
+
+
+/* ADDITIONAL INFORMATION */
+
+#additionalInformation {
+    width: 80%;
+}
+
+#additionalInformation h2 {
+    text-align: center;
+    color:  #4B86CB;
+    font-size: 30px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 5px;
+    box-sizing: border-box;
+    background-color: #C5DEEA;
+    border: none;
+    border-radius: 10px;
+  }
+
+#additionalInformation label {
+    display: inline-block;
+    margin: 3px;
+}
+
+#additionalInformation .input_padding {
+    padding-right: 643px;
+}
