@@ -1,0 +1,20 @@
+@import './mixings';
+
+.titelprice {
+  display: flex;
+  justify-content: space-between;
+}
+
+#menukaart {
+  display: flex;
+  img {
+    margin-left: 50px;
+  }
+  .containermenu {
+    @include menukaart;
+  }
+  .box {
+    width: 300px;
+    margin: 10px;
+  }
+}

@@ -1,0 +1,36 @@
+@mixin colorChangingSquare {
+    transition-duration: 1s;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    &:hover {
+        background-color: blue;
+        width: 400px;
+        height: 400px;
+    }
+}
+
+
+
+@mixin button_styles ($background-color, $height, $width) {
+    background-color: $background-color;
+    width: $width;
+    height: $height;
+    border: solid 3px grey;
+    color: blueviolet;
+    &:hover {
+        background-color: black;
+        color: brown;
+        font-size: 1.2rem;
+        
+    }
+    
+}
+
+.button2 {
+    @include button_styles(rgb(0, 217, 255), 40px, 1000px);
+}
+
+.colorChangingSquare {
+    @include colorChangingSquare();
+}

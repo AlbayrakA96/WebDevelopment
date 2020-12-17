@@ -1,0 +1,180 @@
+.navigatie .nav_text {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ada9a9;
+}
+
+.navigatie .nav_text li {
+  float: right;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.navigatie .nav_text li a {
+  color: black;
+  display: block;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+}
+
+.banner .button1, .banner .button2 {
+  border: solid 1px #68f568;
+  padding: 5px 35px;
+  font-size: 18px;
+  text-decoration: none;
+  margin-top: 30px;
+}
+
+.banner {
+  position: relative;
+  background-color: black;
+}
+
+.banner img {
+  opacity: 0.5;
+}
+
+.banner .banner_content {
+  position: absolute;
+  top: 80px;
+  left: 56%;
+}
+
+.banner .banner_tekst {
+  color: #5590fd;
+}
+
+.banner .banner_title {
+  font-size: 50px;
+  color: #5590fd;
+}
+
+.banner .button1 {
+  color: #5590fd;
+}
+
+.banner .button2 {
+  color: #68f568;
+}
+
+main {
+  background-color: #5f4e4e;
+}
+
+.populair_title {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 60px;
+  padding: 0;
+  margin: 0;
+  background-color: #5f4e4e;
+}
+
+.populair {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  background-color: #5f4e4e;
+  width: 100%;
+}
+
+.populair .populair_pasta {
+  width: 250px;
+  margin-left: 180px;
+}
+
+.populair .populair_pasta .pasta_combo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.populair .populair_pasta .pasta_combo .show {
+  float: right;
+}
+
+.titelprice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#menukaart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#menukaart img {
+  margin-left: 50px;
+}
+
+#menukaart .containermenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 75%;
+  margin: 10px;
+  padding: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#menukaart .box {
+  width: 300px;
+  margin: 10px;
+}
+
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #68f568;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 200px;
+  color: #7676f8;
+}
+
+#footer .contact h3,
+#footer .icons {
+  margin: 10px 0px;
+}
+
+#footer .navigationfooter {
+  margin-top: -42px;
+}
+
+#footer a {
+  list-style: none;
+  text-decoration: none;
+  color: #7676f8;
+}
+
+#footer h3 {
+  margin: 10px 0px;
+}
+
+* {
+  font-family: 'Lobster', cursive;
+  padding: 0;
+  margin: 0;
+}
+/*# sourceMappingURL=styles.css.map */

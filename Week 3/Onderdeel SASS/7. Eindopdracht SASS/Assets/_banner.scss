@@ -1,0 +1,42 @@
+@import "./colors";
+@import "./mixings";
+@import "./extend";
+
+.banner {
+  position: relative;
+  background-color: $ban_bgcolor;
+
+  img {
+    opacity: 0.5;
+  }
+
+  .banner_content {
+    position: absolute;
+    top: 80px;
+    left: 56%;
+  }
+  .banner_tekst {
+    color: $ban_color;
+  }
+
+  .banner_title {
+    font-size: 50px;
+    color: $ban_color;
+  }
+
+  // button
+  .button {
+    margin-top: 30px;
+  }
+ 
+ 
+  .button1 {
+    @extend %button-basic;
+    color: $ban_color;
+  }
+
+  .button2 {
+    @extend %button-basic;
+    color: $button_border;
+  }
+}

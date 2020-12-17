@@ -1,0 +1,55 @@
+@import './colors';
+
+
+@mixin nav_list {
+  float: right;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+@mixin nav_text {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+@mixin nav_a {
+  display: block;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+}
+
+// populair
+
+@mixin populair_title {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 60px;
+  padding: 0;
+  margin: 0;
+}
+
+// bot-content 
+
+@mixin menukaart {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+}
+
+
+// footer
+
+@mixin footer-basic {
+    display: flex;
+    justify-content: space-around;
+    background-color: $button_border;
+    align-items: center;
+    height: 200px;
+    color: $footer_color;
+}

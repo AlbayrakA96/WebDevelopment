@@ -1,0 +1,31 @@
+@import './mixings';
+
+main {
+  background-color: $populair_bgcolor;
+}
+
+.populair_title {
+  @include populair_title;
+  background-color: $populair_bgcolor;
+}
+
+.populair {
+  overflow: hidden;
+  display: flex;
+  margin-top: 20px;
+  background-color: $populair_bgcolor;
+  width: 100%;
+
+  .populair_pasta {
+    width: 250px;
+    margin-left: 180px;
+
+    .pasta_combo {
+      display: flex;
+      justify-content: space-between;
+      .show {
+        float: right;
+      }
+    }
+  }
+}

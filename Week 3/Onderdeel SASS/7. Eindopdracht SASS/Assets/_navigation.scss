@@ -1,0 +1,17 @@
+
+.navigatie {
+  
+  .nav_text {
+    @include nav_text;
+    background-color: $nav_bgcolor;
+
+    li {
+      @include nav_list;
+
+      a {
+        color: $nav_color;
+        @include nav_a;
+      }
+    }
+  }
+}

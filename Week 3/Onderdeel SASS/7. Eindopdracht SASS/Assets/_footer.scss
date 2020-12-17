@@ -1,0 +1,20 @@
+#footer {
+  @include footer-basic;
+
+  .contact h3,
+  .icons {
+    margin: 10px 0px;
+  }
+  .navigationfooter {
+    margin-top: -42px;
+  }
+  a {
+    list-style: none;
+    text-decoration: none;
+    color: rgb(118, 118, 248);
+  }
+  h3 {
+    margin: 10px 0px;
+  }
+}
+
