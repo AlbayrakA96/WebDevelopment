@@ -12,7 +12,7 @@
   </head>
   <body class="bg-secondary">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand text-white" href="./eindopdracht.html">SuperStore</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -20,14 +20,14 @@
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./eindopdracht.html">Home </a>
+            </li>
             <li class="nav-item active">
-              <a class="nav-link text-white" href="./eindopdracht.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" tabindex="-1" aria-disabled="true" href="#">Shop<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-secondary" tabindex="-1" aria-disabled="true" href="#">Shop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-secondary" tabindex="-1" aria-disabled="true" href="#">Contact</a>
+              <a class="nav-link text-secondary" tabindex="-1" aria-disabled="true" href="./contact.html">Contact</a>
             </li>
           </ul>
           
@@ -44,12 +44,47 @@
       </div>
 
     <!-- Card -->
-    
+    <div class="container d-flex flex-column  justify-content-center">
+      <h1 class="text-center text-white">Super Store</h1>
+      <br>
+      <div class="container d-flex justify-content-center "> 
+      <div class="card col-lg-3 col-xs-12" style="width: 22rem;">
+          <img class="image-fluid card-img-top" src="./atletico.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Atletico Madrid 2020/21 Stadium Home</h5>
+            <p class="card-text">Als de Madrilenen in balbezit komen op het Thuisveld, dragen de spelers dit voetbalshirt. Net als het Uitshirt heeft het Aeroready®-ventilatie en een clublogo op de borst.</p>
+            <a href="./adidasproduct.html
+            "><button type="button" class="btn btn-primary btn-lg btn-block">Shop now</button></a>
+          </div>
+        </div>
+        <div class="col-lg-3 offset-1  card" style="width: 22rem;">
+          <img class="image-fluid card-img-top" src="./baraaway.jpg"  alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Nike FC Barcelona Thuisshirt 2020-2021</h5>
+            <p class="card-text">Dit is het nieuwe FC Barcelona thuisshirt voor het komende seizoen. Het is het replica shirt van de variant die wordt gedragen door de spelers van de Spaanse club. Het is geïnspireerd op het shirt dat de spelers droegen tijdens de Champions League finale van 2011.</p>
+            <a href="./superstore.html"><button type="button" class="btn btn-primary btn-lg btn-block">Shop now</button></a>
+          </div>
+        </div>
+        <div class="card col-3 offset-1" style="width: 22rem;">
+          <img class="image-fluid card-img-top" src="./london.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Nike F.C. South London SE11 Sancho</h5>
+            <p class="card-text">The Nike F.C. South London SE11 Sancho Shirt is made from smooth, sweat-wicking fabric to help keep you dry on the pitch or in the stands. Premium details like a woven crest elevate the pitch-inspired style.</p>
+            <a href="./superstore.html"><button type="button" class="btn btn-primary btn-lg btn-block">Shop now</button></a>
+          </div>
+        </div>
+       </div>  
+      
+    </div>
     
       
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+      <path fill-rule="evenodd" d="M11.354 5.646a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+    </svg>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
