@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <pre>
+    Opdracht 10: JavaScript
+    Programmeer de volgende logica in de checkNumber functie:
+
+        Als het ingevoerde getal is gelijk aan 13 of is groter dan 13 en het ingevoerde getal is
+        gelijk aan 20 of kleiner dan 20, dan toon je op het label: “Het ingevoerde getal is
+        gelijk aan 11 of groter dan 11 en is gelijk aan 20 of kleiner dan 20.”.
+
+        </pre>
+    </main>
+    
+    <input type="number" name="number" id="number" />
+    <button id="btn" onclick="checkNumber()">Button</button>
+    
+    
+    <div>
+      <span id="label"></span>
+    </div>
+
+
+
+
+
+    <script>
+        // hier kun je coderen
+        function checkNumber() {
+            
+            let number = parseInt(document.getElementById("number").value);
+        
+            if (number >= 13 && number <=20) {
+
+            document.getElementById("label").innerHTML = "Het ingevoerde getal is gelijk aan 13 of groter dan 13 en is gelijk aan 20 of kleiner dan 20.";
+        }
+      }
+    </script>
+</body>
+</html>

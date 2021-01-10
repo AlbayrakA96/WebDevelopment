@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 12. JavaScript</title>
+</head>
+<body>
+    <main>
+        <h3>Opdracht 12. JavaScript</h3>
+
+        <pre>
+            Programmeer de volgende logica in de checkNumber functie:
+                
+            ● Als het ingevoerde getal groter is dan 30 en kleiner is dan 35 of als het ingevoerde
+              getal groter is dan 40 of kleiner is dan 45, toon dan op het label: “het getal is tussen
+              30 en 35 of het getal is tussen 40 en 45.”
+
+        </pre>
+    </main>
+
+    <input type="number" name="number" id="number" />
+    <button id="btn" onclick="checkNumber()">Button</button>
+    
+    
+    <div>
+      <span id="label"></span>
+    </div>
+
+    <script>
+        
+        function checkNumber() {
+        // hier kun je coderen
+        let number = (document.getElementById("number").value);
+
+            if (number > 30 && number < 35 || number > 40 && number < 45) {
+                document.getElementById("label").innerHTML = "het getal is tussen 30 en 35 of het getal is tussen 40 en 45";
+            }
+
+
+        }
+ 
+    </script>
+    
+</body>
+</html>

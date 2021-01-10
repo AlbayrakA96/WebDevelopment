@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opdracht 13. JavaScript</title>
+  </head>
+  <body>
+    <h1>Translate months</h1>
+    <input type="number" name="number" id="number" />
+    <button onclick="translateMonth()">translate</button>
+    <div id="translatedMonth"></div>
+    <script>
+      function translateMonth() {   
+        // Hier kun je starten met coderen.
+        let translateMonth = document.getElementById("number").value; 
+            
+        if (translateMonth == 1) {
+            document.getElementById("translatedMonth").innerHTML = "Januari";
+
+        }
+        if (translateMonth == 2) {
+            document.getElementById("translatedMonth").innerHTML = "Februari";
+
+        }
+
+        if (translateMonth == 3) {
+            document.getElementById("translatedMonth").innerHTML = "Maart";
+
+        }
+        if (translateMonth == 4) {
+            document.getElementById("translatedMonth").innerHTML = "April";
+
+        }
+        if (translateMonth == 5) {
+            document.getElementById("translatedMonth").innerHTML = "Mei";
+
+        }
+        if (translateMonth == 6) {
+            document.getElementById("translatedMonth").innerHTML = "Juni";
+
+        }
+        if (translateMonth == 7) {
+            document.getElementById("translatedMonth").innerHTML = "Juli";
+
+        }
+        if (translateMonth == 8) {
+            document.getElementById("translatedMonth").innerHTML = "Augustus";
+
+        }
+        if (translateMonth == 9) {
+            document.getElementById("translatedMonth").innerHTML = "September";
+
+        }if (translateMonth == 10) {
+            document.getElementById("translatedMonth").innerHTML = "Oktober";
+
+        }if (translateMonth == 11) {
+            document.getElementById("translatedMonth").innerHTML = "November";
+
+        }
+        if (translateMonth == 12) {
+            document.getElementById("translatedMonth").innerHTML = "December";
+
+        }
+        
+
+      }
+    </script>
+  </body>
+</html>

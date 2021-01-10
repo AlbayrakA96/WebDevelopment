@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 16. JavaScript_Built_In_Methods</title>
+</head>
+<body>
+    <main>
+        <h3>Maak een eigen voorbeeld van de volgende functies en licht toe wat de functie doet in het
+            blok:</h3>
+        <pre>
+            1. charAt()
+            2. concat()
+            3. slice()
+            4. split()
+            5. substr()
+        </pre>
+        <p>Een voorbeeld van charAt().</p>
+        <pre>
+            console.log("Karakter index 2 is '" + test.charAt(2)   + "'");
+        </pre>
+
+        <p>Een voorbeeld van concat().</p>
+        <pre>
+            console.log(sent1.concat(', ', sent2, '. ', sent3));
+        </pre>
+
+        <p>Een voorbeeld van slice().</p>
+        <pre>
+            test4 = sent3.slice(5, 26),
+        </pre>
+
+        
+
+        <script>
+            // variables
+            let test = "Hello, world";
+            let test2 = "Welcome random user";
+            let test3 = "Did you register?";
+
+            var sent1 = "Hello random user";
+            var sent2 = "My name is Abdusselam";
+            var sent3 = "I am learning Javascript";
+        
+            let test4 = test2 + ", " + test3; 
+
+            
+            var woord1 = "Developer";
+            woord2 = woord1.substr(2,5);
+            woord3 = woord1.substr(4);
+
+            console.log(woord3);
+
+            // split 
+            var spreekwoord = 'De appel valt niet ver van de boom.';
+            var words = spreekwoord.split(' ');
+
+            // slice 
+
+            test4 = sent3.slice(5, 26),
+            test5= test4.slice(1, -1)
+
+            
+            // console log charAt()
+            
+            console.log("Karakter index 0 is '" + test.charAt(0)   + "'");
+            console.log("Karakter index 1 is '" + test2.charAt(1)   + "'");
+            console.log("Karakter index 2 is '" + test.charAt(2)   + "'");
+            console.log("Karakter index 3 is '" + test2.charAt(3)   + "'");
+            console.log("Karakter index 999 is '" + test2.charAt(999)   + "'");
+
+            // console log concat()
+
+            console.log(sent1.concat(', ', sent2, '. ', sent3));
+            console.log(sent2.concat(', ', sent1, '!'));
+
+            // console log slice()
+
+            console.log(sent1.slice(4));
+            console.log(test4);
+            console.log(test5);
+
+            // console log split()
+
+            console.log(words[3]);
+
+            // console log substr()
+
+            console.log(woord2);
+
+            // test log()
+            console.log(test.length); 
+
+        </script>
+    </main>
+    
+</body>
+</html>
