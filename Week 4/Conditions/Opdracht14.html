@@ -15,6 +15,7 @@
 
     <input type="number" name="number" id="number" />
     <button onclick="translateMonth()">translate</button>
+    
     <div id="translatedMonth"></div>
 
     <script>
@@ -61,10 +62,12 @@
                 case "11": 
                 document.getElementById("translatedMonth").innerHTML = "November";
                 break; 
-
                 case "12":
                 document.getElementById("translatedMonth").innerHTML = "December";
                 break; 
+                
+                default:
+                text = "Error";
             }
         }
     </script>

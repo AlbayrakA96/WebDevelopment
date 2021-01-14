@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opdracht 5. JavaScript.</title>
+  </head>
+  <body>
+    <h1>DataBase_NameID</h1>
+    <input type="text" name="text" id="text" />
+    <button onclick="checkID()">CheckID</button>
+    
+    <div id="checkID"></div>
+    <div id="randomName"></div>
+    <div>
+      <span id="label"></span>
+      <br />
+      <button onclick="randomNaam()">Random Naam</button>
+      <br>
+      <span id="displayNaam"></span>
+    </div>
+    <script>
+      const words = ["John", "Olly", "Mo", "Hendrik", "Tony"];
+      const randomNames = words[Math.round(Math.random() * 4)];
+
+      function random() {
+        let label1 = document.getElementById("text");
+
+        label1.innerHTML = randomNames;
+
+        console.log(randomNames);
+      }
+
+      function checkID() {
+        let text = document.getElementById("text").value;
+        text = text.toUpperCase();
+        let label = document.getElementById("checkID");
+
+        // console.log(text);
+        if (
+          text == "JOHN" ||
+          text == "OLLY" ||
+          text == "MO" ||
+          text == "HENDRIK" ||
+          text == "TONY"
+        ) {
+          label.innerHTML = "Name is registered in Database: " + text;
+          // console.log('jaa');
+        } else {
+          label.innerHTML = "NAME IS NOT REGISTERED";
+        }
+      }
+
+      //   Math.round(Math.random() * 4
+      function randomNaam() {
+        let number = Math.round(Math.random() * 8);
+        let number2 = Math.random() * 2;
+        console.log(number);
+        namenGen(number);
+      }
+
+      function namenGen(x) {
+        let name = "";
+        switch (x) {
+          case 1:
+            name = "John";
+            break;
+
+          case 2:
+            name = "Oly";
+            break;
+
+          case 3:
+            name = "Mo";
+            break;
+
+          case 4:
+            name = "Hendrik";
+            break;
+
+          case 5:
+            name = "Tony";
+            break;
+
+          case 6:
+            name = "Irus";
+            break;
+
+          case 7:
+            name = "Jan";
+            break;
+
+          case 8:
+            name = "Peter";
+            break;
+        }
+        console.log(name);
+        
+        displayNaam.innerHTML = name;
+      }
+    </script>
+  </body>
+</html>

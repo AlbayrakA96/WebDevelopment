@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Opdracht 15. JavaScript</title>
+    <title>Document</title>
     <style>
       .words button {
         position: relative;
@@ -49,9 +49,6 @@
     </style>
   </head>
   <body>
-      <main>
-          <h3>Opdracht 15: Guess the word!</h3>
-      </main>
     <h1>Guess the word</h1>
     <section>
       <div class="words">
@@ -110,19 +107,36 @@
         "Important",
       ];
       const guessingWord = words[Math.round(Math.random() * 8)];
-      function guess(obj) {
+      console.log(guessingWord);
+      
+        function guess(obj) {
+          let guess = obj.querySelector("span").innerText;
+          let counter = document.getElementById("count").textContent; 
           
-        let count = document.getElementById("count").textContent; 
-            if (count < 3) {
-                count++;
-                document.getElementById("count").textContent =  count ;
+          if (guess == guessingWord) {
+            document.getElementById("label").innerHTML = "You have guessed the correct word! " + guessingWord;
             
-            }
-            else if (count >= 3) {
-                document.getElementById("label").textContent = "Game Over. The correct word is" + correctWord ;
-            }
-        
+          }
+            
+          
+          if (counter == 3) {
+            document.getElementById("label").innerHTML = "Game Over. The correct word is " + guessingWord;
+            alert("Game Over. The correct word is " + guessingWord);
+
+            location.reload()
+          }
+
+          if (counter < 3 && guess != guessingWord) {
+            counter++; document.getElementById("count").textContent= counter;
+            
+            
+          }
+
+          
+          
+    
       }
+      
     </script>
   </body>
 </html>
