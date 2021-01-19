@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 4. Scopes_JavaScript</title>
+</head>
+<body>
+    <main>
+        <h3>Opdracht 4: Scopes.</h3>
+        <p>Q1. Kijkend naar de volgende code:</p>
+        <pre>
+            function printCar() {
+                carBrand = "Volvo";
+                return function(type) {
+                console.log(carBrand + " " + type);
+                }
+                }
+                const car = printCar();
+                car("v40");
+               
+               
+             
+        </pre>
+        <p>Wat wordt er in de console gelogt? Wat voor scoping heb je hier te maken?</p>
+        <p>De variable "carBrand" wordt hier gelogt, en we hebben hier te maken met een Blockscope</p>
+    </main>
+
+    <script>
+            function printCar() {
+            
+            carBrand = "Volvo";
+            
+            return function(parameter) {
+            console.log(carBrand + " " + parameter);
+            }
+               } 
+            
+            const newNaam = printCar();
+            newNaam("v40");
+            
+            // printCar();
+            
+
+    </script>
+    
+</body>
+</html>

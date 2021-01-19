@@ -3,31 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opdracht 1. Scopes_JavaScript</title>
+    <title>Opdracht 2. Scopes_JavaScript</title>
 </head>
 <body>
     <main>
-        <h3>Opdracht 1: Scopes.</h3>
+        <h3>Opdracht 2: Scopes.</h3>
         <p>Q1. Kijkend naar de volgende code:</p>
         <pre>
-            function printCar() {
-                const carBrand = "Volvo";
-                }
-                console.log(carBrand);               
+            let carName;
+                function printCar() {
+                carBrand = "Volvo";
+                    }
+                console.log(carBrand);
+             
         </pre>
         <p>Wat wordt er in de console gelogt? Wat voor scoping heb je hier te maken?</p>
         <p>De variable "carBrand" wordt hier gelogt, en we hebben hier te maken met een Blockscope</p>
     </main>
 
     <script>
-        
-        function printCar() {
+        let carName;
             
-            const carBrand = "Volvo";
-            console.log(carBrand);   
-                }
-                printCar()    
-
+        function printCar() {
+            carBrand = "Volvo";
+            console.log(carBrand);
+            }
+        printCar();
+ 
     </script>
     
 </body>

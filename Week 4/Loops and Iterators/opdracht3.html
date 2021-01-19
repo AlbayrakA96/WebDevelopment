@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript. Loops & Iterators</title>
+</head>
+<body>
+    <main>
+        <h1>JavaScript. Loops & Iterators</h1>
+
+        <h3>Opdracht 3.</h3>
+        <p>Maak gebruik van een loop en itereer door de sports array heen. Itereer de loop met even
+            getallen en print de waarde in jouw console uit.</p>
+        <pre>
+    const sports = [
+        "voetbal",
+        "basketbal",
+        "volleybal",
+        "hockey",
+        "honkbal",
+        "zwemmen",
+        "kortbal",
+      ];
+
+    var text = ""; {
+    var i;
+        for (i = 0; i < sports.length; i+=2) {
+            text += sports[i] + " ";
+            }
+            document.getElementById("answer").innerHTML = text;
+            console.log(sports);
+            
+        }
+        </pre>
+        <div id="answer"></div>
+    </main>
+
+
+    <script>
+        const sports = [
+        "voetbal",
+        "basketbal",
+        "volleybal",
+        "hockey",
+        "honkbal",
+        "zwemmen",
+        "kortbal",
+      ];
+
+      var text = ""; {
+        var i;
+        for (i = 0; i < sports.length; i+=2) {
+            text += sports[i] + "<br>";
+            }
+            document.getElementById("answer").innerHTML = text;
+            console.log(sports);
+            
+        }
+    </script>
+</body>
+</html>

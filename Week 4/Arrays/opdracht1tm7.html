@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 1. Arrays_JavaScript</title>
+</head>
+<body>
+    <main>
+        <h1>JavaScript Arrays.</h1>
+        <!-- Opdracht 1 -->
+    <h3>Opdracht 1.</h3>
+        <p>Maak een array met 10 getallen die willekeurig in een array staan. Print de array uit in jouw
+            console.</p>
+
+            <pre>
+                let randomNumbers = [];
+
+                randomNumbers = [3, 5, 7, 8, 1, 4, 2, 6, 9, 10];
+
+                console.log(randomNumbers);
+
+            </pre>
+
+    <h3>Opdracht 2.</h3>
+        <p>Maak een array met 5 verschillende fruitsoorten. Print de array uit in jouw console.</p>
+            <pre>
+                let fruitSoorten = [];
+                fruitSoorten = [Kiwi, Aardbei, Banaan, Appel, Druif];
+
+                console.log(fruitSoorten);
+            </pre>
+
+    <h3>Opdracht 3.</h3>
+        <p>Op welke index staat “Appel”. Gebruik de index waarde om “Appel” in jouw console uit te printen.</p>
+            <pre>
+                fruitSoorten = ["Banaan", "Appel", "Druif", "Kiwi", "Peer"]
+                
+                console.log(fruitSoorten[]);
+            </pre>
+
+    <h3>Opdracht 4.</h3>
+        <p>Op welke index staat “Aardbei”. Gebruik de index waarde om “Aardbei” in jouw console uit te printen.</p>
+            <pre>
+                fruitSoorten = ["Banaan", "Appel", "Druif", "Aardbei", "Kiwi", "Peer"]
+
+                console.log(fruitSoorten[3])
+            </pre>
+
+    <h3>Opdracht 5.</h3>
+        <p>We gaan het iets complexer maken met het bepalen van de fruit. Er zijn nu 2 arrays
+            gedefinieerd, namelijk een array met getallen en een array met fruitsoorten. De eerste array
+            bepaalt welke fruitsoort er geprint moet worden. Gebruik de Math.random() methode om te
+            bepalen welke waarde uit de eerste array wordt gehaald. Vervolgens kun je de waarde
+            gebruiken als index en de fruitsoort printen in jouw console. Helaas, de getallen 5 t/m 10 uit
+            de eerste array zullen een undefined teruggeven als je dat als index bij de fruit array zal
+            gebruiken. Hiervoor kun je de modulo (%) gebruiken. Zoek uit hoe modulo werkt en pas dat
+            toe aan de waarde van de eerste array. Als resultaat zal er altijd een fruitsoort uitgeprint
+            worden.</p>
+        <pre>
+            let randomNumbers = [];
+            randomNumbers = [3, 5, 7, 8, 1, 4, 2, 6, 9, 10];
+
+            let fruitSoorten = [];
+            fruitSoorten = ["Banaan", "Appel", "Druif", "Aardbei", "Kiwi"]
+
+            let mathNumbers = [Math.floor(Math.random() * randomNumbers.length)]
+
+             console.log(fruitSoorten[mathNumbers % 5]);
+        </pre>
+        
+        <h3>Opdracht 6.</h3>
+        <p>Je hebt nu geleerd hoe je arrays kunt aanmaken en de waarde kunt benaderen. Arrays
+            hebben ook functies die je kunt gebruiken. Zoek uit wat push(), pop(), shift(), slice(), splice(),
+            sort(). Maak gebruik van de fruits array en maak voor elke functie een voorbeeld en geef in
+            commentaar wat het doet.</p>
+        <pre>
+        Push()
+        let fruitSoorten = [];
+        fruitSoorten = ["Banaan", "Appel", "Druif", "Aardbei", "Kiwi"]
+
+            fruitSoorten.push("Sinaasappel");
+                document.getElementById("demo").innerHTML = fruitSoorten;
+
+                console.log(fruitSoorten);
+
+        Pop()
+        let fruitSoorten = [];
+        fruitSoorten = ["Banaan", "Appel", "Druif", "Aardbei", "Kiwi"]  
+
+            fruitSoorten.pop();
+            console.log(fruitSoorten.pop());
+            
+        
+        Shift()
+        let fruitSoorten = [];
+            fruitSoorten = ["Banaan", "Appel", "Druif", "Aardbei", "Kiwi"]
+
+            fruitSoorten.Shift();
+            console.log(fruitSoorten.shift());
+        
+        
+        slice()
+            let fruitSoorten = ["Banaan", "Appel", "Druif", "Aardbei", "Kiwi"]
+            
+            let sportVoeding = fruitSoorten.slice(0, 2);
+            console.log(sportVoeding);
+            
+        </pre>
+
+        <h3>Opdracht 7.</h3>
+        <p>Naast de functies die je van de array kunt gebruiken heb je ook nog de “length” property die
+            je kunt gebruiken. Hiermee kan je de grootte van de array opvragen. Gebruik de length
+            property en print in de console uit hoe groot de fruits array is.
+            </p>
+        <pre>
+            let autoMerken = [];
+        autoMerken = ["Renault", "BMW", "Ford", "KIA", "Opel", "Mercedes"]
+
+        console.log(autoMerken.length);
+        // expected output: 6
+        </pre>
+
+        <h3>Opdracht 8.</h3>
+        <p>De bestaande values van de array kan je ook aanpassen. Zoek uit hoe je op een specifieke
+            index de waarde kan aanpassen. Pas de value “Peer” naar “Sinaasappel”.
+        </p>
+        <pre>
+            let fruitSoorten = [];
+            let fruitSoorten = ["Banaan", "Appel", "Druif", "Peer", "Kiwi"]
+
+            fruitSoorten[3] = "Sinaasappel";
+
+            console.log(fruitSoorten);
+        </pre>
+
+        <h3>Opdracht 9.</h3>
+        <p>Kijkend naar de fruits array. Hoe draai je de values “Aardbei” en “Mandarijn” om in de array
+            door gebruik te maken van indices (index).</p>
+        <pre>
+
+        </pre>
+        <p id="demo"></p>
+    </main>
+
+    <script>
+       
+
+        
+
+        // randomNumbers 
+        let randomNumbers = [];
+
+        randomNumbers = [3, 5, 7, 8, 1, 4, 2, 6, 9, 10];
+        
+        // console.log(randomNumbers.length);
+        // console.log(mathNumbers);
+        console.log(randomNumbers);
+        
+        // fruitsoorten 
+        let fruitSoorten = [];
+
+        fruitSoorten = ["Banaan", "Appel", "Druif", "Aardbei", "Kiwi"]
+        console.log(fruitSoorten[3]);
+
+        // console.log(fruitSoorten);
+        // console.log(fruitSoorten[4]);
+
+        let mathNumbers = [Math.floor(Math.random() * randomNumbers.length)]
+        console.log(fruitSoorten[mathNumbers % 5]);
+
+        // push()
+
+        // fruitSoorten.push("Sinaasappel");
+        // document.getElementById("demo").innerHTML = fruitSoorten;
+
+        // console.log(fruitSoorten);
+        
+        // pop()  = The pop() method removes the last element from an array and returns that element.
+
+        console.log(fruitSoorten.pop());
+
+        // shift () = The shift() method removes the first element from an array and returns that removed element.
+
+        // console.log(fruitSoorten.shift());
+
+        // slice () = Select elements from an array:
+
+        let sportVoeding = fruitSoorten.slice(0, 2);
+        console.log(sportVoeding);
+
+        // opdracht 7.
+
+        let autoMerken = [];
+        autoMerken = ["Renault", "BMW", "Ford", "KIA", "Opel", "Mercedes"]
+
+        console.log(autoMerken.length);
+
+        // opdracht 8.
+        let fruitSoorten2 = [];
+            let fruitSoorten3 = ["Banaan", "Appel", "Druif", "Peer", "Kiwi"]
+
+            fruitSoorten3[3] = "Sinaasappel";
+
+            console.log(fruitSoorten3);
+        
+        
+    </script>
+    
+</body>
+</html>

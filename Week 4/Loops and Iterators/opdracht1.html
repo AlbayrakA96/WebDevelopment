@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,
+initial-scale=1.0"
+    />
+    <title>JavaScript. Loops & Iterators</title>
+    </head>
+   
+  
+  <body>
+    <main>
+        <h1>JavaScript. Loops & Iterators</h1>
+
+        <!-- Opdrachten -->
+        <h3>Opdracht 1.</h3>
+        <p>Maak gebruik van een loop en itereer de sports array heen. Print het 1 voor 1 uit in jouw
+            console.</p>
+        <pre>
+            const sports = [
+                "voetbal",
+                "basketbal",
+                "volleybal",
+                "hockey",
+                "honkbal",
+                "zwemmen",
+                "kortbal",
+                ];
+
+            var text = ""; {
+                var i;
+                for (i = 0; i < sports.length; i++) {
+                    text += sports[i] + "&lt;br&gt;";
+                    }
+                    document.getElementById("answer").innerHTML = text;
+                    console.log(sports);
+                }
+              
+        </pre>
+        <h3>Uitwerking opdracht 1.</h3>
+        <div id="answer"></div>
+
+        
+    </main>
+    
+    <script>
+      
+      const sports = [
+        "voetbal",
+        "basketbal",
+        "volleybal",
+        "hockey",
+        "honkbal",
+        "zwemmen",
+        "kortbal",
+      ];
+    
+        // Opdracht 1.
+        
+        var text = ""; {
+        var i;
+        for (i = 0; i < sports.length; i++) {
+            text += sports[i] + "<br>";
+            }
+            document.getElementById("answer").innerHTML = text;
+            console.log(sports);
+        }
+    
+    </script>
+  </body>
+</html>
