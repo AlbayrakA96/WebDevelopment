@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>JavaScript_Introductie</title>
+</head>
+<body>
+    <main>
+    <h1>JavaScript Introductie</h1>
+        <h3>Opdracht 6.</h3>
+        <p> 1. Herhaal opdracht 5 en geef antwoord op de volgende vragen.</p>
+    <!-- String ======================================================= -->
+        <p>1. Hoe herken je dat een waarde String is? Geef ook een voorbeeld.</p>
+        <p>A. De waarde string kan je herkennen aan de dubbele quotes "", of de single quote ''</p>
+        <pre>
+            let voorNaam = "Abdusselam";
+
+            console.log("Datatype " + typeof voorNaam);
+        </pre>
+    <!-- Number ========================================================= -->
+        <p>2. Hoe herken je dat een waarde Number is? Geef ook een voorbeeld.</p>
+        <p>A. De waarde Number kan je herkennen aan een getal. </p>
+        <pre>
+            let Number = 5;
+
+            console.log("Datatype " + typeof number)
+        </pre>
+    <!-- BigInt ======================================================== -->
+        <p>3. Hoe herken je dat een waarde BigInt is? Geef ook een voorbeeld.</p>
+        <p>A. De waarde BigInt kan je herkennen aan een grote getal.</p>
+        <pre>
+            let groteGetal = 900719n;
+
+            console.log("Datatype " + typeof groteGetal);
+        </pre>
+    <!-- Symbol========================================================= -->
+        <p>4. Hoe herken je dat een waarde Symbol is? Geef ook een voorbeeld.</p>
+        <p>A. De waarde Symbol kan je herkennen aan een variable met dezelfde waarde </p>
+        <pre>
+            let sym1 = Symbol()
+            let sym2 = Symbol('foo')
+            let sym3 = Symbol('foo')
+
+            console.log("Datatype " + typeof sym2);
+        </pre>
+
+
+
+        <p>Open dit html bestand in jouw browser en kijk in je console. Je zult “datatype boolean” in console zien.</p>
+        <p>Q. 4. Wat voor type is de waarde false?</p>
+        <p>A. 4. De waarde false is de type Boolean.</p>
+    </main>
+ 
+ <script>
+    //  String
+    let voorNaam = "Abdusselam";
+
+    console.log("Datatype " + typeof voorNaam);
+    //  Number
+    let number = 5;
+
+    console.log("Datatype " + typeof number);
+    // BigInt 
+    let groteGetal = 900719n;
+
+    console.log("Datatype " + typeof groteGetal);
+    // Symbol 
+        let sym1 = Symbol()
+        let sym2 = Symbol('foo')
+        let sym3 = Symbol('foo')
+
+        console.log("Datatype " + typeof sym2);
+ // hier kun je coderen
+ </script>
+</body>
+</html>

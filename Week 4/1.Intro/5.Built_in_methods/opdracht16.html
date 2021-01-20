@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>JavaScript_Introductie</title>
+</head>
+<body>
+    <main>
+        <h1>JavaScript: Introductie Build in methods</h1>
+            <h3>Opdracht 16.</h3>
+                <p>Maak een eigen voorbeeld van de volgende functies en licht toe wat de functie doet in het blok:</p>
+                    <pre>
+                        1. charAt()
+                        2. concat()
+                        3. slice()
+                        4. split()
+                        5. substr()
+                    </pre>
+                    <!-- example charAt() -->
+                <p><strong>Een voorbeeld van de charAt() functie.</strong></p>
+                    <pre>
+                        let voorNaam = "Abdusselam";
+                        let eersteLetter = voorNaam.charAt(0);
+
+                        console.log(eersteLetter);
+                    </pre>
+                <p>Geeft een character uit de string terug.</p>
+                    <!-- example concat() -->
+                <p><strong>Een voorbeeld van de concat() functie.</strong></p>
+                    <pre>
+                        let voorNaam = "Abdusselam ";
+                        let achterNaam = "Albayrak";
+
+                        let namenAlbayrak = voorNaam.concat(achterNaam);
+                    </pre>
+                <p>Met de functie concat() kan je meerdere strings aan elkaar toevoegen.</p>
+                    <!-- example slice() -->
+                <p><strong>Een voorbeeld van de slice() functie.</strong></p>
+                    <pre>
+                        let mercedesModel = "AMG GT63";
+                        let typeMotor = mercedesModel.slice(0,3);\
+
+                        console.log(typeMotor);
+                    </pre>
+                <p>Met de functie slice() haal je een deel uit de string, en deze kan je terug roepen.</p>
+                    <!-- example split() -->
+                <p><strong>Een voorbeeld van de split() functie.</strong></p>
+                    <pre>
+                        let text = "Hallo hoe gaat het met u?";
+                        let splitSentence = text.split(" ");
+
+                        console.log(splitSentence);
+                    </pre>
+                <p>Met de functie split() verdeel je de string in array van substrings. </p>
+                    <!-- example substr() -->
+                <p><strong>Een voorbeeld van de substr() functie.</strong></p>
+                    <pre>
+                        let text = "The sky is no limit";
+                        let substrLimit = text.substr(13, 18)
+
+                        console.log(substrLimit);
+                    </pre>
+                <p>The substr() method extracts parts of a string, beginning at the character at the specified position, and returns the specified number of characters.</p>
+        
+        
+
+
+    </main>
+ 
+ <script>
+        // example charAt()
+            // let voorNaam = "Abdusselam";
+            // let eersteLetter = voorNaam.charAt(1);
+
+            // console.log(eersteLetter);
+
+        // example concat()
+            // let voorNaam = "Abdusselam ";
+            // let achterNaam = "Albayrak";
+
+            // let namenAlbayrak = voorNaam.concat(achterNaam);
+
+            // console.log(namenAlbayrak);
+
+        // example slice()
+            // let mercedesModel = "AMG GT63";
+            // let typeMotor = mercedesModel.slice(0,3);
+
+            // console.log(typeMotor);
+        // example split()
+            // let text = "Hallo hoe gaat het met u?";
+            // let splitSentence = text.split(" ");
+
+            // console.log(splitSentence);
+        // example substr()
+            // let text = "The sky is no limit";
+            // let substrLimit = text.substr(13, 18)
+            
+            // console.log(substrLimit);
+
+ </script>
+</body>
+</html>

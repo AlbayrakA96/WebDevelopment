@@ -48,15 +48,23 @@
         "kortbal",
       ];
 
-      var text = ""; {
-        var i;
-        for (i = 0; i < sports.length; i+=2) {
-            text += sports[i] + "<br>";
-            }
-            document.getElementById("answer").innerHTML = text;
-            console.log(sports);
+      for (let i = 0; i < 7; i++) {
+          
+        if (i % 2 == 0) {
+              console.log(sports[i]);
+          }
+          
+      }
+
+    //   var text = ""; {
+    //     var i;
+    //     for (i = 0; i < sports.length; i+=2) {
+    //         text += sports[i] + "<br>";
+    //         }
+    //         document.getElementById("answer").innerHTML = text;
+    //         console.log(sports);
             
-        }
+    //     }
     </script>
 </body>
 </html>
