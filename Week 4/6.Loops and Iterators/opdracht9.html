@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript. Loops & Iterators</title>
+</head>
+<body>
+    <main>
+        <h1>JavaScript. Loops & Iterators</h1>
+
+        <h3>Opdracht 9.</h3>
+        <p>Stel je hebt het volgende array met random getallen:</p>
+        <p>● [2,7,5,10,4,9,3,1,8,6]        </p>
+        <p>Bubble sort is een hele bekende sorterings algoritme. Hiermee kun je de array met random
+            getallen sorteren van klein naar groot. Je mag bij deze oefening geen gebruik maken van de
+            sort() functie.</p>
+        <p>Lees je in hoe Bubble sort werkt: https://en.wikipedia.org/wiki/Bubble_sort en
+            codeer de sorterings algoritme uit.</p>
+        <pre>
+            function randomNumbers(array) {
+
+                for (let i = 0; i < array.length; i++) {
+                    for (let j = 0; j < array.length; j++) {
+                        if (array[j] > array[j+1]) {
+                            const temp = array[j];
+                            array[j] = array[j+1];
+                            array[j+1] = temp;
+                        }
+                        
+                    }
+                    
+                }
+                return array;
+            }
+    
+            
+    
+            console.log(randomNumbers([2,7,5,10,4,9,3,1,8,6]));
+        </pre>
+    </main>
+    <script>
+        function randomNumbers(array) {
+
+            for (let i = 0; i < array.length - 1; i++) {
+                for (let x = 0; x < array.length - 1 - i; x++) {
+                    if  
+                        (array[x] > array[x+1]) {
+                         /** /
+                        [array[x], array[x+1]] = [array[x+1], array[x]];
+                            /*/
+                        const temp = array[x];
+                        array[x] = array[x+1];
+                        array[x+1] = temp;
+                            /**/
+   
+                        
+
+                        
+                    }
+                    
+                }
+                
+            }
+            return array;
+        }
+
+        
+
+        console.log(randomNumbers([2,7,5,10,4,9,3,1,8,6]));
+
+    </script>
+</body>
+</html>
