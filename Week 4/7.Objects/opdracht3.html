@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+ <title>JavaScript. Functions</title>
+</head>
+<body>
+    <main>
+        <h1>JavaScript. Objects.</h1>
+        <h3>Opdracht 3.</h3>
+        <p>Het is heel gebruikelijk dat dezelfde objecten in een lijst staan. Maak een lijst aan en voeg 4
+            Club objecten toe aan de lijst. Itereer over de lijst heen en print de verschillende clubnamen
+            uit op jouw pagina.</p>
+        <pre>
+            const clubInfo = function (nameClub, typeSport, numberMembers, memberNation) {
+         
+         
+                this.nameClub = nameClub;
+                this.typeSport = typeSport;
+                this.numberMembers = numberMembers;
+                this.memberNation = memberNation;
+       
+                
+            }
+               
+               let allClubs = [
+                   clubAjax = new clubInfo("Ajax", "voetbalclub", "11", "Nederland"),
+                   clubFeyenoord = new clubInfo("Feyenoord", "voetbalclub", "11", "Nederland"),
+                   clubPSV = new clubInfo("PSV", "voetbalclub", "11", "Nederland")
+               ];   
+                   for (var i = 0; i < allClubs.length; i++) {
+                    console.log(allClubs[i].nameClub);
+               }
+               
+        </pre>
+             <div id="clubs" class="clubs"></div>
+    </main>
+ <script>
+        // Opdracht 3.
+     const clubInfo = function (nameClub, typeSport, numberMembers, memberNation) {
+         
+         
+         this.nameClub = nameClub;
+         this.typeSport = typeSport;
+         this.numberMembers = numberMembers;
+         this.memberNation = memberNation;
+
+         
+     }
+        
+        let allClubs = [
+            clubAjax = new clubInfo("Ajax", "voetbalclub", "11", "Nederland"),
+            clubFeyenoord = new clubInfo("Feyenoord", "voetbalclub", "11", "Nederland"),
+            clubPSV = new clubInfo("PSV", "voetbalclub", "11", "Nederland")
+        ];   
+            for (var i = 0; i < allClubs.length; i++) {
+             console.log(allClubs[i].nameClub);
+        }
+        
+
+        // const clubInfo1 = new clubInfo("Ajax", "Voetbal", 11)
+        // document.write(clubAjax.nameClub + " is een " + clubAjax.typeSport + " en heeft " + clubAjax.numberMembers + " voetbal spelers");
+     
+// start assignments
+ </script>
+</body>
+</html>

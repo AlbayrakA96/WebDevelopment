@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+ <title>JavaScript. Functions</title>
+</head>
+<body>
+    <main>
+        <h1>JavaScript. Objects.</h1>
+        <h3>Opdracht 1.</h3>
+        <p>Maak een Object die club informatie bijhoudt:</p>
+        <p>● Naam van de club <br>
+            ● Type sport <br>
+            ● Aantal leden
+            </p>
+        <pre>
+            const clubInfo = function (nameClub, typeSport, numberMembers) {
+                this.nameClub = nameClub;
+                this.typeSport = typeSport;
+                this.numberMembers = numberMembers;
+       
+                
+            }
+               clubAjax = new clubInfo("Ajax", "Voetbalclub", "11")
+        </pre>
+             <div id="clubs" class="clubs"></div>
+    </main>
+ <script>
+        // Opdracht 1.
+     const clubInfo = function (nameClub, typeSport, numberMembers) {
+         
+         
+         this.nameClub = nameClub;
+         this.typeSport = typeSport;
+         this.numberMembers = numberMembers;
+
+         
+     }
+        clubAjax = new clubInfo("Ajax", "Voetbalclub", "11")     
+        // const clubInfo1 = new clubInfo("Ajax", "Voetbal", 11)
+        document.write(clubAjax.nameClub + " is een " + clubAjax.typeSport + " en heeft " + clubAjax.numberMembers + " voetbal spelers");
+     
+// start assignments
+ </script>
+</body>
+</html>
