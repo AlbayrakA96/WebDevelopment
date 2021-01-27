@@ -1,0 +1,125 @@
+body{
+    background-image: url(./Phillysdon.gif);
+    background-size:auto;
+    padding:0;
+    margin:0;
+}
+#titleRekenmachine{
+    background-color: rgba(0, 128, 0, 0.26);
+    position: relative;
+    left: auto;
+    color: white;
+    text-align: center;
+    font-family: Garamond, serif;
+    font-size: 40px;
+    color: rgba(45, 182, 45, 0.801);
+    border: solid 3px rgb(24, 90, 18);
+    
+}
+#rekenmachine {
+    margin: 0 auto;
+	top: 30px;
+	position: relative;
+    width: 340px;
+    height: 550px;
+    background-color: rgba(0, 0, 0, 0.295);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+
+#uitkomst {
+    height: 120px;
+    background-color: rgba(128, 128, 128, 0.521);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    
+}
+
+#output{
+    padding-top: 35px;
+    padding-right: 15px;
+	text-align: right;
+	height: 30px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    
+}
+
+.operator, .number, .period .wisAlles{
+    width: 70px;
+    float: left;
+    justify-content:center;
+    height: 70px;
+    border-radius: 50px;
+    margin-left: 12px;
+    margin-top: 10px;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.output {
+    bottom: 10px;
+    float: right;
+    
+
+}
+
+.operator {
+    font-size: 25px;
+    background-color:rgba(250, 250, 250, 0.582);
+}
+
+.operator:focus, .number:focus, .period:focus{
+    outline: 0;
+    
+}
+
+.operator:active, .number:active, .period:active{
+    font-size: 30px;
+    background-color: green;
+}
+
+.operator:nth-child(4) {
+    background-color: rgba(6, 58, 10, 0.74);
+    color: rgba(255, 255, 255, 0.658);
+    
+}
+
+.operator:nth-child(8) {
+    background-color: rgba(6, 63, 11, 0.644);
+    color: rgba(255, 255, 255, 0.658);
+    
+}
+
+.operator:nth-child(12) {
+    background-color: rgba(8, 80, 14, 0.562);
+    color: rgba(255, 255, 255, 0.658);
+    
+}
+
+.operator:nth-child(16) {
+    background-color: rgba(11, 105, 19, 0.514);
+    color: rgba(255, 255, 255, 0.658);
+}
+
+.operator:nth-child(19) {
+    background-color: rgba(14, 139, 24, 0.555);
+    color: rgba(255, 255, 255, 0.658);
+}
+
+.number:nth-child(17) {
+    width: 151px;
+}
+
+.number, .period {
+    background-color:rgba(128, 128, 128, 0.623);
+}
+
+.period {
+    font-size: 20px;
+    font-weight: bold;
+}
+
