@@ -1,5 +1,5 @@
 body{
-    background-image: url(./Phillysdon.gif);
+    background-color: rgb(0, 0, 0);
     background-size:auto;
     padding:0;
     margin:0;
@@ -16,7 +16,11 @@ body{
     border: solid 3px rgb(24, 90, 18);
     
 }
+
+
 #rekenmachine {
+    
+    background-image: url(./Phillysdon.gif);
     margin: 0 auto;
 	top: 30px;
 	position: relative;
@@ -25,14 +29,17 @@ body{
     background-color: rgba(0, 0, 0, 0.295);
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    
 }
 
 
 #uitkomst {
+    
     height: 120px;
     background-color: rgba(128, 128, 128, 0.521);
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    
     
 }
 
@@ -40,10 +47,12 @@ body{
     padding-top: 35px;
     padding-right: 15px;
 	text-align: right;
-	height: 30px;
+	height: 230px;
     font-size: 40px;
     color: rgb(255, 255, 255);
-    
+    overflow: hidden;
+    text-overflow: hidden;
+
 }
 
 .operator, .number, .period .wisAlles{
@@ -63,8 +72,6 @@ body{
 .output {
     bottom: 10px;
     float: right;
-    
-
 }
 
 .operator {
@@ -77,9 +84,28 @@ body{
     
 }
 
-.operator:active, .number:active, .period:active{
+.number:active, .period:active{
     font-size: 30px;
     background-color: green;
+}
+
+.operator:nth-child(4):hover {
+    background-color: rgba(89, 161, 95, 0.74);
+}
+
+.operator:nth-child(8):hover {
+    background-color: rgba(89, 161, 95, 0.74);
+}
+
+.operator:nth-child(12):hover {
+    background-color: rgba(89, 161, 95, 0.74);
+}
+
+.operator:nth-child(16):hover {
+    background-color: rgba(89, 161, 95, 0.74);
+}
+.operator:nth-child(19):hover {
+    background-color: rgba(89, 161, 95, 0.74);
 }
 
 .operator:nth-child(4) {

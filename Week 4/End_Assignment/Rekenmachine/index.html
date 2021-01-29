@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Calculator_End_assignment</title>
+</head>
+<link rel="stylesheet" href="styles.css">
+<body>
+    <main>
+        <h1 id="titleRekenmachine">Eindopdracht: Rekenmachine</h1>
+        <!-- HTML Layout rekenmachine -->
+        <!-- Stappenplan Rekenmachine
+        Rekenmachine heeft een output scherm en een toetsenbord
+        Rekenmachine heeft 4 rijen van 4 buttons, en 1 rij van 3 buttons -->
+        <div id="container">
+			<div id="rekenmachine">
+				<div id="uitkomst">
+					<div id="output"></div>  
+				</div>
+				<div id="toetsenbord">
+                <!-- Row 1 -->
+					<button class="operator wisAlles" onclick="forclear()" id="clear">AC</button>
+					<button class="operator posNeg" onclick="negative()">+/-</button>
+					<button class="operator modulo" onclick="fordisplay('%')">%</button>
+                    <button class="operator divide" onclick="fordisplay('/')">&#247;</button>
+                <!-- Row 2 -->
+                    <button class="number" onclick="fordisplay('7')" >7</button>
+					<button class="number" onclick="fordisplay('8')" >8</button>
+					<button class="number" onclick="fordisplay('9')" >9</button>
+                    <button class="operator multiply" onclick="fordisplay('*')">&times;</button>
+                <!-- Row 3 -->
+					<button class="number" value="4" onclick="fordisplay('4')">4</button>
+					<button class="number" value="5" onclick="fordisplay('5')">5</button>
+					<button class="number" value="6" onclick="fordisplay('6')">6</button>
+                    <button class="operator minus" onclick="fordisplay('-')" id="-">-</button>
+                <!-- Row 4 -->
+					<button class="number" onclick="fordisplay('1')">1</button>
+					<button class="number" onclick="fordisplay('2')">2</button>
+					<button class="number"  onclick="fordisplay('3')">3</button>
+					<button class="operator" onclick="fordisplay('+')">+</button>
+				<!--Row 5  -->
+					<button class="number" onclick="fordisplay('0')">0</button>
+					<button class="operator period" onclick="fordisplay('.')">.</button>
+					<button class="operator gelijkAan" onclick="solve()">=</button>
+				</div>
+			</div>
+		</div>
+    </main>
+    <script src="testscript.js"></script>
+</body>
+</html>
