@@ -1,20 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Lexend Mega', sans-serif;
   overflow:hidden;
-  
 }
-
-
 
 /* Navbar */
 nav{
-  background: #ffffff98;
+  background: #ffffff;
   padding: 5px 40px;
 }
+
 nav ul{
   list-style: none;
   display: flex;
@@ -40,7 +38,7 @@ nav ul li.items:after{
   bottom: 5px;
   height: 2px;
   width: 100%;
-  background: #11116b;
+  background: #000000;
   opacity: 0;
   transition: all 0.2s linear;
 }
@@ -57,13 +55,13 @@ nav ul li.logo{
   user-select: none;
 }
 nav ul li a{
-  color: #151783;
+  color: #000000;
   font-size: 20px;
   text-decoration: none;
   transition: .4s;
 }
 nav ul li:hover a{
-  color: rgb(25, 9, 114);
+  color: rgb(2, 2, 2);
 }
 nav ul li i{
   font-size: 23px;
@@ -90,29 +88,62 @@ nav ul li.btn.hide i:before{
   }
   nav ul li.items:hover{
     border-radius: 1px;
-    box-shadow: inset 0 0 5px #2f2a75,
-                inset 0 0 10px #2f2a75;
+    box-shadow: inset 0 0 5px #000000,
+                inset 0 0 10px #000000;
   }
   nav ul li.items:hover:after{
     opacity: 0;
   }
 }
-
 /* Navbar End */
 
 /* Main content */
+#hero_page {
+    background-image: url(./images/tower_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 750px;
+}
+
 #hero__typer {
-    margin-left: 50px;
-    margin-top: 150px;
+    
+    margin-left: 70px;
+    margin-top: 100px;
     text-align: center;
-    font-size: 50px;
-    color: rgb(30, 15, 107);
+    font-size: 40px;
+    color: rgb(0, 0, 0);
 }
  
 
 #hero__banner {
     display: flex;
-    height: 90vh;
-    
+    height: 150px; 
     
 }
+
+.hero__textcontent {
+   height: auto; 
+   font-size: 15px;
+   margin-left: 70px;
+   opacity: 0;
+   animation: ani2 0.5s ease-out forwards;
+}
+
+.hero__textcontent p{
+    opacity: 0;
+    margin: 0;
+    animation: ani2 0.75s ease-out 4.6s forwards;
+}
+/* Hero hover */
+/* .hero__textcontent :hover {
+    background-color: black;
+    color: white;
+} */
+
+@keyframes ani2{
+    100%{
+        opacity: 1;
+    }
+}
+
+/* test */
