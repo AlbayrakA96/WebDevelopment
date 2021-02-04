@@ -174,80 +174,42 @@ nav ul li.btn.hide i:before{
 }
 
 /* about me */
-#about__content {
+.aboutme__banner {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
-  background-color: rgb(255, 255, 255);
-  height: 73vh;
-  display: flex;
-  justify-content: center;
-}
-
-.about__wrapper {
-  display: flex;
-  justify-content: space-around;
   height: 80vh;
-  width: 1150px;
-  border-radius: 10px;
-  background-color: rgba(191, 241, 214, 0.26);
-  
-}
-/* .about__wrapper:hover {
-  
-
-} */
-
-.about__wrapper img {
-  /* margin-left: 20px; */
-  margin-top: 35px;
-  height: 200px;
-  width: 200px;
-  border-radius: 10%;
-  /* border: black 3px solid; */
 }
 
-.about__textarea {
-  margin: 35px 10px 5px 0px;
-  width: 70%;
-  color: rgb(0, 0, 0);
-  /* text-align: right; */
-  
-}
-
-.about__left {
+.aboutme__wrapper {
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 25%;
-  text-align: center;
-  
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1300px;
 }
 
-/* Icons---------------------------------------------- */
-/* .about__icons .fab, .fas {
-  margin-top: 130px;
-  padding-left: 15px;
-  font-size: 35px;
-  color: rgb(73, 58, 207);
+#aboutme__pf {
+  background-image: url(./images/Albayrak_white.jpeg);
+  height: 540px;
+  width: 320px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
-.about__icons .fab:hover {
+#aboutme__pf:hover {
+  background-image: url(./images/Albayrak_color.jpeg);
+}
+
+.aboutme__links {
+  /* margin-top: 305px; */
+  height: auto;
   font-size: 50px;
-  
 }
 
-.about__icons .fas:hover {
-  font-size: 50px;
-} */
-
-.flip__icons {
-  margin-top: 130px;
-  color: black;
-  width: 250px;
-  background-color: rgba(255, 255, 255, 0.623);
-  height: 50px;
-  text-align: center;
-  border: solid 2px black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.aboutme__text {
+  width: 950px;
+  padding: 0;
 }
