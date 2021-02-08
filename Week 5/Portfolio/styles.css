@@ -218,7 +218,7 @@ nav ul li.btn.hide i:before{
   color: rgb(0, 0, 0);
 }
 
-/* about me card */
+/* ABOUT ME CARD SART----------------------------------------------- */
 
 .aboutme__card {
     margin-top: 10px;
@@ -324,3 +324,4 @@ nav ul li.btn.hide i:before{
     font-size: 25px;
 }
 
+/* ABOUT ME CARD END ----------------------------------------------- */
