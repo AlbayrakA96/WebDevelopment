@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap');
+/* color rgba(51,133,217,255) */
 *{
   margin: 0;
   padding: 0;
@@ -62,7 +63,7 @@ nav ul li a{
   transition: .4s;
 }
 nav ul li:hover a{
-  color: rgb(2, 2, 2);
+  color: rgba(51,133,217,255);
 }
 nav ul li i{
   font-size: 23px;
@@ -111,7 +112,7 @@ nav ul li.btn.hide i:before{
     margin-top: 100px;
     text-align: center;
     font-size: 40px;
-    color: rgb(0, 0, 0);
+    color: rgba(51,133,217,255);
 }
  
 
@@ -151,12 +152,13 @@ nav ul li.btn.hide i:before{
 
 #hero__button span{
   padding: 5px 5px;
-  border-bottom: solid 3px black;
+  border-bottom: solid 3px rgba(51,133,217,255);
   text-decoration: none;
+  color: black;
   
 }
 
-#hero__button span:active {
+.hero__display span:target {
   
   color: black;
   text-decoration: none;
@@ -173,43 +175,152 @@ nav ul li.btn.hide i:before{
     }
 }
 
-/* about me */
-.aboutme__banner {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
+.aboutme__section{
+  margin-top: -50px;
+  height: 90vh;
   width: 100%;
-  height: 80vh;
-}
-
-.aboutme__wrapper {
   display: flex;
-  justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1300px;
+  justify-content: center;
+  align-items: center;
+  background-color:rgb(255, 255, 255);
+  /* margin-left: auto;
+  margin-right: auto; */
+  
 }
 
-#aboutme__pf {
+.aboutme__content {
+  width: 90%;
+  height: 90%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.aboutme__img {
+  display: flex;
   background-image: url(./images/Albayrak_white.jpeg);
-  height: 540px;
-  width: 320px;
-  display: block;
+  height: 100%;
+  width: 25%;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
-#aboutme__pf:hover {
+.aboutme__img:hover {
   background-image: url(./images/Albayrak_color.jpeg);
 }
 
-.aboutme__links {
-  /* margin-top: 305px; */
-  height: auto;
-  font-size: 50px;
+.aboutme__text {
+  display: flex;
+  padding: 20px;
+  height: 100%;
+  width: 40%;
+  color: rgb(0, 0, 0);
 }
 
-.aboutme__text {
-  width: 950px;
-  padding: 0;
+/* about me card */
+
+.aboutme__card {
+    margin-top: 10px;
+    display: flex;
+    height: 50%;
+    width: 19%;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    
 }
+
+.aboutme__card:hover > .back-face {
+    transform: rotateY(0deg);
+
+}
+
+.aboutme__card:hover > .front-face {
+    transform: rotateY(-180deg);
+}
+
+.front-face,
+.contents, .back-face{
+    position: absolute;
+}
+
+.contents {
+    left: 0;
+    top: 30%;
+    width: 100%;
+    perspective: 100px;
+    transform: translateY(-50%) translateZ(60px) scale(.94);
+
+}
+
+/* Front of the card */
+
+.front-face {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: url(./images/mountain-top.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform .7s cubic-bezier(.4, .2, .2, 1);
+
+}
+.front-face p:after {
+    content: '';
+    display: block;
+    left: 0;
+    right: 0;
+    height: 3px;
+    width: 70%;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -22px;
+    
+}
+.front h2{
+    font-family: 'Red Rose', cursive;
+    color: rgb(0, 0, 0);
+    font-size: 29px;
+}
+
+.front p{
+    /* background-color:white; */
+    font-family: 'Red Rose', bold;
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+    /* margin-bottom: 15px; */
+    
+}
+/* back of the card */
+
+.back-face {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: red;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform .7s cubic-bezier(.4, .2, .2, 1);
+  transform: rotateY(180deg);
+}
+
+.back-face h2 {
+    font-family: 'Red Rose', cursive;
+    color: rgb(31, 41, 133);
+    font-size:33px;
+    padding-bottom: 5px;
+}
+
+.back-face span {
+    font-family: 'Red Rose', cursive;
+    color: rgb(31, 37, 114);
+    font-size: 25px;
+}
+
