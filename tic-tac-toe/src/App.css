@@ -1,29 +1,24 @@
-.app {
-  height: 100vh;
-  background-color: rgb(111, 181, 204);
+/* .app {
+  min-height: 100vh;
+  background-color: rgb(128, 204, 255);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   
-
 }
 
 .tweet {
   height: 300px;
   width: 300px;
-  background-color: white;
+  background-color:white;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 2px solid black;
-}
-
-.app__Container {
-  display: flex;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  justify-content: space-around;
-  background-color: red;
   
-}
+  
+} */
+
+
+

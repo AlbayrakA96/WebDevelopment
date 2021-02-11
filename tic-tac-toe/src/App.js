@@ -1,23 +1,24 @@
-import React from 'react'; 
+import React, { useState } from 'react';
 import Tweet from './Tweet';
 
-function App(){
+function App() {
+  
+  
 
-  const sayHello = () => {
-    console.log("hello");
-  };
+  const [users, setUsers] = useState([
+    { name: 'Abdusselam', message: "Hello i am Abdusselam." },
+    { name: 'Ed', message: "Hello my name is Ed." },
+    { name: 'Harold', message: "Hello i'm Harold" }
+  ]);
 
-  const counter = 0;
-
-  return(
-    <div class="app">
-      <h1>Hello React.</h1>
-      <div class="app__Container">
-      <Tweet name="Albayrak" />
-      <Tweet name="Chakai" />
-      <Tweet name="Sayf" />
-      </div>
+  return (  
+    <div className="app">
+      {users.map(user => (
+        <Tweet name={user.name} message={user.message} />
+      ))}
+      <p>{currentTime}</p>
     </div>
+
   );
 }
 
