@@ -3,29 +3,38 @@ import "./App.css";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import TodoApp from "./TodoApp/TodoApp";
+import data from "./data";
 
-const data = {
-  datums: [
-    { date: "20-1-2021", name: "meDay" },
-    { date: 10, month: 2, name: "KillmeDay" },
-  ],
-};
-function tileContent({ date, view }) {
-  return data.datums.map((el) => {
-    return view === "month" && date.getDate(" ") === el.date ? (
-      <p>{JSON.stringify(el.name)}</p>
+const tileContent = ({ activeStarDate, date, view }) => {
+  return data.map((el) => {
+    const datum = new Date(el.date);
+    const naam = el.name.slice(0, 1);
+
+    return view === "month" &&
+      date.getDate() === datum.getDate() &&
+      date.getMonth() === datum.getMonth() ? (
+      <p style={{ backgroundColor: "blue", color: "white" }}>{naam}</p>
     ) : null;
   });
-}
+};
 
 function App() {
   const [value, setValue] = useState(new Date());
   function onChange(nextValue) {
     setValue(nextValue);
   }
+
+  // toggleTodoApp = () => {
+  //   visible = false;
+  // };
   return (
     <div className="App">
-      <Calendar tileContent={tileContent} onChange={onChange} value={value} />
+      <Calendar
+        className="Calendar"
+        tileContent={tileContent}
+        value={value}
+        // onClickDay={toggleTodoApp}
+      />
 
       <TodoApp />
     </div>
