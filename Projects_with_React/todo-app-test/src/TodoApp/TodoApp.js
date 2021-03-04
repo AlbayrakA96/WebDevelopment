@@ -4,10 +4,14 @@ import "./TodoApp.css";
 function TodoApp() {
   const [data, setData] = useState(null);
   const [print, setPrint] = useState(false);
+  const [deleteItemHandler, setdeleteItemHandler] = useState(" ");
+
+  // function deleteItemHandler(item) {}
+
   function getData(val) {
     setData(val.target.value);
     setPrint(false);
-    console.log(val.target.value);
+    // console.log(val.target.value);
   }
   const addListHandler = (event) => {};
   return (
@@ -21,7 +25,7 @@ function TodoApp() {
         <p className="TodoList_items">
           <input className="checkbox" type="checkbox" />
           {data}
-          <button>x</button>
+          <button onClick={deleteItemHandler}>x</button>
         </p>
       ) : null}
     </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
@@ -20,10 +20,13 @@ const tileContent = ({ activeStarDate, date, view }) => {
 
 function App() {
   const [value, setValue] = useState(new Date());
+  const [toggleState, setToggleState] = useState("off");
+  function toggle() {
+    setToggleState(toggleState === "off" ? "on" : "off");
+  }
   function onChange(nextValue) {
     setValue(nextValue);
   }
-
   // toggleTodoApp = () => {
   //   visible = false;
   // };
@@ -33,12 +36,10 @@ function App() {
         className="Calendar"
         tileContent={tileContent}
         value={value}
-        // onClickDay={toggleTodoApp}
+        onClickDay={toggle}
       />
-
-      <TodoApp />
+      {toggleState === "off" ? null : <TodoApp />}
     </div>
   );
 }
-
 export default App;
