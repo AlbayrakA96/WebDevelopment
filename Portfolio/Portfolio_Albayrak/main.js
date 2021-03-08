@@ -1,12 +1,3 @@
-// Navbar button
-$(document).ready(function () {
-  $(".btn").click(function () {
-    $(".items").toggleClass("show");
-    $("ul li").toggleClass("hide");
-  });
-});
-
-// Hero typer voor banner
 let heroTyper = document.getElementById("hero__typer");
 var typewriter = new Typewriter(heroTyper, {
   loop: true,
