@@ -16,6 +16,8 @@ jQuery(document).ready(function($){
 	
 	initHeadline();
 	
+	
+
 
 	function initHeadline() {
 		//insert <i> element for each letter of a changing word
