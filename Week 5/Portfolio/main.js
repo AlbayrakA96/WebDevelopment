@@ -12,7 +12,7 @@ var typewriter = new Typewriter(heroTyper, {
   loop: true,
 });
 typewriter
-  .typeString("Hello, I'm Abdusselam Albayrak.")
+  .typeString("Hello, I'm Barbaros.")
   .pauseFor(500)
   .deleteChars(20)
   .typeString("<strong>a Front-end Developer.</strong>")

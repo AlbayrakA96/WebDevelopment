@@ -1,0 +1,23 @@
+.names {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    border: solid 1px black;
+    text-align: center;
+}
+
+section {
+    border: solid 3px black;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px;
+    font-weight: 800;
+}
+
+.clicked {
+    background: green;
+    color: black;
+    outline: none;
+}
