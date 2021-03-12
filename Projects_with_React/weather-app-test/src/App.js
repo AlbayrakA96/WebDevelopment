@@ -1,15 +1,19 @@
-import React, { useState } from 'react'
-import './App.css';
-import Info from './Components/Info/Info'
-import Country from './Components/Country/Country'
+import React from "react";
+import "./App.css";
 
- const App = () => {
-   let [tempSymbol, setTempSymbol] = useState('C')
+function App() {
   return (
-    <main>
-      <Info tempSymbol={tempSymbol} setTempSymbol={() => setTempSymbol(tempSymbol === 'C' ? 'F' : 'C')}/>
-      <Country />
-    </main>
+    <div className="App">
+      <div className="card">
+        <h2 className="title">
+          <i className="fa fa-cloud"></i>Weather App
+        </h2>
+        <div className="search-form">
+          <input type="text" placeholder="Voer uw stad in" />
+          <button type='button'>Search</button>
+        </div>
+      </div>
+    </div>
   );
 }
 

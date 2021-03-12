@@ -1,0 +1,75 @@
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgba(182, 168, 175, 255);
+}
+
+/* GROUNDERS__TITLE ------------------------------------------------ */
+/* logo color rgba(17,17,17,255) */
+
+.grounders__title {
+  width: 100%;
+  background-color: rgba(17, 17, 17, 255);
+  height: 12vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.grounders__title img {
+  width: 100px;
+  height: 100px;
+}
+
+/*  GROUNDERS____SLIDER --------------------------------------------- */
+/* slider_wrapper_background : rgba(182,168,175,255) */
+.grounders__slider {
+  width: 100%;
+  height: auto;
+  background-color: rgba(182, 168, 175, 255);
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+  align-items: center;
+}
+
+.grounders__slider img {
+  height: 400px;
+  width: 700px;
+  object-fit: cover;
+  
+}
+
+/* GROUNDERS__NAVBAR --------------------------------------------------- */
+.grounders__navbar {
+  height: auto;
+  background-color: rgba(119, 93, 106, 255);
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  font-size: 25px;
+  color: rgba(252, 205, 180, 255);
+  margin-left: 90px;
+}
+
+li:hover {
+    color: rgb(187, 99, 99);
+}
+
+a:hover {
+    text-decoration: none;
+}

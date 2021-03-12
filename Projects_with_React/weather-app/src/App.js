@@ -1,20 +1,16 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
+import WeatherCard from "./Components/WeatherCard/WeatherCard";
+import WeatherDetail from './Components/WeatherDetail/WeatherDetail'
+const App = () => {
 
-function App() {
   return (
     <div className="App">
-      <div className="card">
-        <h2 className="title">
-          <i className="fa fa-cloud"></i>Weather App
-        </h2>
-        <div className="search-form">
-          <input type="text" placeholder="Voer uw stad in" />
-          <button type='button'>Search</button>
-        </div>
-      </div>
+      <WeatherCard city="Rotterdam" />
+      <WeatherCard city="Amsterdam" />
+      <WeatherCard city="Las Vegas" />
+      <WeatherDetail />
     </div>
   );
-}
-
+};
 export default App;

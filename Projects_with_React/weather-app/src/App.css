@@ -1,87 +1,69 @@
 body {
-  background-color: rgb(109, 109, 109);
-  
+  background-color: black;
 }
 
-.App {
+.App{
   text-align: center;
-  
-}
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  height: 100%;
 
-.card {
+}
+.card{
   position: relative;
-  width: 30%;
-  height: 70%;
+  border-radius: 10px;
+  width: 350px;
+  height: 600px;
   margin: auto;
   margin-bottom: 10px;
   margin-top: 1%;
+  background: linear-gradient(45deg, rgb(0, 183, 255) 10%, rgb(146, 124, 124) 90%);
   background-size: cover;
-  /* box-shadow: 5px 10px 5px 10px rgb(15, 5, 5); */
-  padding: 40px;
+  padding: 20px;
 }
 
-.card::after {
-  content: "";
-  background-position: center;
+.card:hover{
+  position: relative;
+  border-radius: 10px;
+  width: 350px;
+  height: 600px;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 1%;
+  background: linear-gradient(45deg, rgb(60, 78, 85) 10%, rgb(31, 22, 22) 90%);
   background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url('./city.jfif');
-  opacity: 0.8;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-  border-radius: 12px;
-
+  padding: 20px;
 }
 
-.title {
-  color: rgb(245, 245, 245);
-  font-weight: 800;
-  font-size: 30px;
-  background-color: rgba(0, 0, 0, 0.596);
-  width: 60%;
-  margin: 0 auto;
-  border-radius: 10px;
-  
-}
-
-.search-form {
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.search-form input {
-  width: 70%;
-  height: 40px;
-  padding: 5px;
-  background: rgb(0, 0, 0);
-  color: rgb(202, 10, 10);
-  border-radius: 10px;
-  /* margin: 0 auto; */
-}
-
-.search-form button {
-  width: 18%;
-  height: 50px;
-  padding: 5px;
-  border: none;
-  border-radius: 10px !important;
-  background: linear-gradient(45deg, #eb3349 30%, #f45c43 90%);
-  font-weight: 400;
-  font-size: 18px;
-  color: white;
-}
-
-.search-form button:hover {
+.title{
   color: black;
-  background: linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.308) 30%,
-    rgba(128, 128, 128, 0.295) 90%
-  );
+  font-weight: 800;
+  font-size: 20px;
+}
+.main-container{
+  width: 100%;
+  height: auto;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 30px;
+}
+.main-container h4{
+  font-size: 25px;
+  font-weight: 800;
+}
+.temp{
+  background-color: rgba(33, 150, 150, 0.411);
+  padding: 5px;
+  position: relative;
+}
+
+.temp img {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
