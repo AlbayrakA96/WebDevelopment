@@ -35,7 +35,7 @@ const WeatherCard = ({ city }) => {
             <h4>{weatherdata.main.temp}&deg;C</h4>
           </div>
           <div className="location">
-            <h3>{weatherdata.name} |</h3>
+            <h3>{weatherdata.name} | {weatherdata.sys.country}</h3>
           </div>
           <div className="temp-range">
             <h6>

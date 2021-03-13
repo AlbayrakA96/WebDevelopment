@@ -25,22 +25,22 @@ body {
 
 /*  GROUNDERS____SLIDER --------------------------------------------- */
 /* slider_wrapper_background : rgba(182,168,175,255) */
-.grounders__slider {
-  width: 100%;
-  height: auto;
-  background-color: rgba(182, 168, 175, 255);
-  display: flex;
-  justify-content: center;
-  padding: 80px;
-  align-items: center;
-}
+    .grounders__slider {
+    width: 100%;
+    height: auto;
+    background-color: rgba(182, 168, 175, 255);
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    align-items: center;
+    }
 
-.grounders__slider img {
-  height: 400px;
-  width: 700px;
-  object-fit: cover;
-  
-}
+    .grounders__slider img {
+    height: 400px;
+    width: 700px;
+    object-fit: cover;
+    
+    }
 
 /* GROUNDERS__NAVBAR --------------------------------------------------- */
 .grounders__navbar {
