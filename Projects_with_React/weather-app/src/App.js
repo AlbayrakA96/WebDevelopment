@@ -6,10 +6,8 @@ const App = () => {
   return (
     <div className="App">
       <WeatherCard city="istanbul" />
-      <WeatherCard city="bali" />
-      <WeatherCard city="new york" />
-      {/* <WeatherCard city="Amsterdam" /> */}
-      {/* <WeatherDetail /> */}
+      <WeatherCard city="Moscow" />
+      <WeatherDetail />
     </div>
   );
 };

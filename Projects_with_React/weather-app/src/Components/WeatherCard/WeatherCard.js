@@ -25,18 +25,19 @@ const WeatherCard = ({ city }) => {
       {weatherdata !== null ? (
         <div className="main-container">
           <h2 className="title"></h2>
-          <h4>{weatherdata.name}</h4>
+          <h3>
+            {weatherdata.name} | {weatherdata.sys.country}
+          </h3>
 
           <h3>{weatherdata.weather[0].main}</h3>
           <div className="temp">
             <img
+              className="weather__icon"
               src={`http://openweathermap.org/img/wn/${weatherdata.weather[0].icon}@2x.png`}
             ></img>
             <h4>{weatherdata.main.temp}&deg;C</h4>
           </div>
-          <div className="location">
-            <h3>{weatherdata.name} | {weatherdata.sys.country}</h3>
-          </div>
+          <div className="location"></div>
           <div className="temp-range">
             <h6>
               min: {weatherdata.main.temp_min}&deg;C || Max:{" "}
