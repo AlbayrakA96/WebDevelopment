@@ -5,8 +5,10 @@ import WeatherDetail from "./Components/WeatherDetail/WeatherDetail";
 const App = () => {
   return (
     <div className="App">
-      <WeatherCard city="istanbul" />
-      <WeatherCard city="Moscow" />
+      <div className="Weather_card">
+        <WeatherCard city="istanbul" />
+        <WeatherCard city="Moscow" />
+      </div>
       <WeatherDetail />
     </div>
   );
