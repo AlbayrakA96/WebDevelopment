@@ -19,32 +19,25 @@ const WeatherCard = ({ city, click }) => {
   }, []);
   return (
     <div className="card" onClick={click}>
-      <h2 className="title">
-        Weather card <i className="fa fa-cloud"></i>
-      </h2>
+      <div className="title">Weather card</div>
       {weatherdata !== null ? (
         <div className="main-container">
-          <h2 className="title"></h2>
-
-          <h3>
-            {weatherdata.name} | {weatherdata.sys.country}
-          </h3>
-
-          <h3>{weatherdata.weather[0].main}</h3>
-          <div className="temp">
+          <div className="left">
+            <h2>
+              {weatherdata.name} | {weatherdata.sys.country}
+            </h2>
+            <h2>    {weatherdata.main.temp}&deg;C</h2>
+            <h3>{weatherdata.weather[0].main}</h3>
+            <p>Min: {weatherdata.main.temp_min}&deg;C</p>
+            <p>Max: {weatherdata.main.temp_max}&deg;C</p>
+            <p>Humidity: {weatherdata.main.humidity}%</p> 
+        
+          </div>
+          <div className="rechts">
             <img
               className="weather__icon"
               src={`http://openweathermap.org/img/wn/${weatherdata.weather[0].icon}@2x.png`}
             ></img>
-            <h4>{weatherdata.main.temp}&deg;C</h4>
-          </div>
-          <div className="location"></div>
-          <div className="temp-range">
-            <h6>
-              min: {weatherdata.main.temp_min}&deg;C || Max:{" "}
-              {weatherdata.main.temp_max}&deg;C || Humidity:{" "}
-              {weatherdata.main.humidity}%
-            </h6>
           </div>
         </div>
       ) : null}

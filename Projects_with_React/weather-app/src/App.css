@@ -5,11 +5,10 @@ body {
 }
 
 .App{
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* align-items: center; */
 
 }
 
@@ -17,6 +16,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  
+  width: 100%;
 }
 
