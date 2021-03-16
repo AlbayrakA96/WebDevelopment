@@ -6,7 +6,7 @@ const App = () => {
   return (
     <div className="App">
       <div className="Weather_card">
-        <WeatherCard city="istanbul" />
+        <WeatherCard city="Amsterdam" />
         <WeatherCard city="Moscow" />
       </div>
       <WeatherDetail />
