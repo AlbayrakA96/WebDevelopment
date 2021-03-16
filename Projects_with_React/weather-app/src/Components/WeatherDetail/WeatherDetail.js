@@ -5,7 +5,7 @@ import "./WeatherDetail.css";
 const WeatherDetail = ({ city }) => {
   const [weatherdata, setWeatherData] = useState(null);
   //   const [city, setCity] = useState('istanbul');
-  // const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
   const getData = async () => {
     try {
       const data = await getWeatherData(city);
@@ -18,23 +18,34 @@ const WeatherDetail = ({ city }) => {
   useEffect(() => {
     getData();
   }, []);
-
   // NEW SUB-FUNCTION FOR ACCORDION BELOW ///----------------------------------------------------------------------------------------
   const [active, setActive] = useState("");
   const Accordion = ({ title, active, setActive }) => {
+    let d = new Date(title.dt * 1000).toLocaleDateString();
+    let min = Math.floor(title.temp.min);
+    let max = Math.floor(title.temp.max);
+
+    console.log(d);
+    console.log(weatherdata.daily);
     return (
       <div className="accordion">
         <div className="accordionHeading">
           <div className="container">
-            <p></p>
-            <span onClick={() => setActive(title)}>
-              {active === title ? "X" : "|||"}
+            <p>
+              {d} {min}/{max}&deg;C
+            </p>
+            <span onClick={() => setActive({ d })}>
+              {active === { d } ? "X" : "|||"}
             </span>
           </div>
         </div>
-        <div className={(active === title ? "show" : "") + " accordionContent"}>
+        <div className={(active === { d } ? "show" : "") + " accordionContent"}>
           <div className="container">
-            <p>LOrem dghsdkjghsdkgdsk sdghkdjsghkjsdh</p>
+            <p>
+              LOrem dghsdkjghsdkgdsk sdghkdjsghkjsdh{d}
+              {weatherdata.timezone}
+              {weatherdata.current.temp}
+            </p>
           </div>
         </div>
       </div>
@@ -43,12 +54,17 @@ const WeatherDetail = ({ city }) => {
   // ------------------------------------------------------------------------------------------------------------------------------
   return (
     <div className="weatherDetails">
-      <h3>WeatherDetails/accordion</h3>
-      <Accordion title="Title1" active={active} setActive={setActive} />
-      <Accordion title="Title2" active={active} setActive={setActive} />
-      <Accordion title="Title3" active={active} setActive={setActive} />
-      <Accordion title="Title3" active={active} setActive={setActive} />
-      <Accordion title="Title3" active={active} setActive={setActive} />
+      {weatherdata !== null ? (
+        <div>
+          <h3>WeatherDetails/accordion{weatherdata.timezone}</h3>
+          {weatherdata.daily.map((datum) => (
+            <div>
+              <Accordion title={datum} key={datum.id} />
+            </div>
+          ))}
+        </div>
+      ) : null}
+      <div>Hello{}</div>
     </div>
   );
 };
