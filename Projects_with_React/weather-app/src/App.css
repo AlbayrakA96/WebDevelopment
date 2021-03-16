@@ -6,12 +6,17 @@ body {
 
 .App{
   height: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
 
 }
 
 .Weather_card {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   
 }
 

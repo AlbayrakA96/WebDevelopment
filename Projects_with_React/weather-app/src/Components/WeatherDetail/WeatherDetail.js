@@ -18,7 +18,7 @@ const WeatherDetail = ({ city }) => {
     getData();
   }, []);
   // NEW SUB-FUNCTION FOR ACCORDION BELOW ///----------------------------------------------------------------------------------------
-  const [active, setActive] = useState("");
+  const [active, setActive] = useState("off");
   const Accordion = ({ title, active, setActive }) => {
     let d = new Date(title.dt * 1000).toLocaleDateString();
     let min = Math.floor(title.temp.min);
@@ -36,12 +36,6 @@ const WeatherDetail = ({ city }) => {
     );
     // console.log(d);
     // console.log(weatherdata);
-
-    // <img
-    //   className="weather__icon"
-    //   src={`http://openweathermap.org/img/wn/${title.current.weather[0].icon}@2x.png`}
-    // ></img>;
-
     return (
       <div className="accordion">
         <div className="accordionHeading">
@@ -53,7 +47,9 @@ const WeatherDetail = ({ city }) => {
             </span>
           </div>
         </div>
-        <div className={(active === title ? "show" : "") + " accordionContent"}>
+        <div
+          className={(active === title ? "show" : "off") + " accordionContent"}
+        >
           <div className="container">
             <table className="table">
               <thead>
@@ -99,9 +95,7 @@ const WeatherDetail = ({ city }) => {
           ))}
         </div>
       ) : null}
-      <div>Hello{}</div>
     </div>
   );
 };
 export default WeatherDetail;
-// const weatherIcon = "http://openweathermap.org/img/w/";

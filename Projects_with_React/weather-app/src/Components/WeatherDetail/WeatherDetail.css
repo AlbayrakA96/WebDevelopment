@@ -5,7 +5,7 @@
   font-family: sans-serif;
 }
 .weatherDetails {
-  width: 50%;
+  width: 100%;
   min-height: 50vh;
   padding: 20px 0;
   background: #edeef1;
@@ -17,8 +17,8 @@
 }
 .accordion {
   width: 100%;
-  max-width: 540px;
-  margin: 18px auto;
+  /* max-width: 540px;/ */
+  margin: 5px auto;
   color: rgb(0, 0, 0);
 }
 .accordionHeading {

@@ -12,7 +12,7 @@ const App = () => {
     <div className="App">
       <div className="Weather_card">
         <WeatherCard city="Dubai" click={toggle} />
-        <WeatherCard city="Moscow" click={toggle} />
+        <WeatherCard city="Amsterdam" click={toggle} />
         {toggleState === "off" ? null : <WeatherDetail />}
       </div>
     </div>
