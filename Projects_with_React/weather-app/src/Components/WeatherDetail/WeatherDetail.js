@@ -42,7 +42,7 @@ const WeatherDetail = ({ city }) => {
         <div className={(active === { d } ? "show" : "") + " accordionContent"}>
           <div className="container">
             <p>
-              LOrem dghsdkjghsdkgdsk sdghkdjsghkjsdh{d}
+              {d}
               {weatherdata.timezone}
               {weatherdata.current.temp}
             </p>
@@ -57,9 +57,9 @@ const WeatherDetail = ({ city }) => {
       {weatherdata !== null ? (
         <div>
           <h3>WeatherDetails/accordion{weatherdata.timezone}</h3>
-          {weatherdata.daily.map((datum) => (
+          {weatherdata.daily.map(( datum, index ) => (
             <div>
-              <Accordion title={datum} key={datum.id} />
+              <Accordion title={datum} key={index} />
             </div>
           ))}
         </div>
