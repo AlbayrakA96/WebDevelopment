@@ -4,7 +4,6 @@ import "./WeatherDetail.css";
 // FUNCTION WEATHERDETAIL-------------------------------------------------------------------------------------------------------
 const WeatherDetail = ({ city }) => {
   const [weatherdata, setWeatherData] = useState(null);
-  //   const [city, setCity] = useState('istanbul');
   const [loading, setLoading] = useState(false);
   const getData = async () => {
     try {
@@ -24,28 +23,64 @@ const WeatherDetail = ({ city }) => {
     let d = new Date(title.dt * 1000).toLocaleDateString();
     let min = Math.floor(title.temp.min);
     let max = Math.floor(title.temp.max);
+    let morning = Math.floor(title.temp.morn);
+    let afternoon = Math.floor(title.temp.day);
+    let evening = Math.floor(title.temp.eve);
+    let night = Math.floor(title.temp.night);
 
-    console.log(d);
-    console.log(weatherdata.daily);
+    let icon = (
+      <img
+        className="detail_icon"
+        src={`http://openweathermap.org/img/wn/${title.weather[0].icon}@2x.png`}
+      ></img>
+    );
+    // console.log(d);
+    // console.log(weatherdata);
+
+    // <img
+    //   className="weather__icon"
+    //   src={`http://openweathermap.org/img/wn/${title.current.weather[0].icon}@2x.png`}
+    // ></img>;
+
     return (
       <div className="accordion">
         <div className="accordionHeading">
           <div className="container">
-            <p>
-              {d} {min}/{max}&deg;C
-            </p>
-            <span onClick={() => setActive({ d })}>
-              {active === { d } ? "X" : "|||"}
+            {d} {icon}
+            {min}/{max}&deg;C
+            <span onClick={() => setActive(title)}>
+              {active === title ? "X" : "="}
             </span>
           </div>
         </div>
-        <div className={(active === { d } ? "show" : "") + " accordionContent"}>
+        <div className={(active === title ? "show" : "") + " accordionContent"}>
           <div className="container">
-            <p>
-              {d}
-              {weatherdata.timezone}
-              {weatherdata.current.temp}
-            </p>
+            <table className="table">
+              <thead>
+                <tr>
+                  <th colSpan="2"></th>
+                  <th>Morning</th>
+                  <th>Afternoon</th>
+                  <th>Evening</th>
+                  <th>Night</th>
+                </tr>
+              </thead>
+              <tbody className="tbody">
+                <tr>
+                  <td colSpan="2">Temperature</td>
+                  <td>{morning}&deg;C</td>
+                  <td>{afternoon}&deg;C</td>
+                  <td>{evening}&deg;C</td>
+                  <td>{night}&deg;C</td>
+                </tr>
+              </tbody>
+              {/* <tfoot>
+                <tr>
+                  <td>Sum</td>
+                  <td>$180</td>
+                </tr>
+              </tfoot> */}
+            </table>
           </div>
         </div>
       </div>
@@ -56,10 +91,10 @@ const WeatherDetail = ({ city }) => {
     <div className="weatherDetails">
       {weatherdata !== null ? (
         <div>
-          <h3>WeatherDetails/accordion{weatherdata.timezone}</h3>
-          {weatherdata.daily.map(( datum, index ) => (
+          <h3>{weatherdata.timezone}</h3>
+          {weatherdata.daily.map((datum) => (
             <div>
-              <Accordion title={datum} key={index} />
+              <Accordion title={datum} active={active} setActive={setActive} />
             </div>
           ))}
         </div>

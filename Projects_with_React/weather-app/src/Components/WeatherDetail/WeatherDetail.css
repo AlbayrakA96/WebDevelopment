@@ -1,55 +1,81 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
-.weatherDetails{
-  width: 100%;
-  min-height: 100 vh;
+.weatherDetails {
+  width: 50%;
+  min-height: 50vh;
   padding: 20px 0;
   background: #edeef1;
 }
-.container{
+.container {
   width: 100%;
   max-width: 480px;
   margin: auto;
 }
-.accordion{
+.accordion {
   width: 100%;
   max-width: 540px;
   margin: 18px auto;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
-.accordionHeading{
-  background: #3f475d;
+.accordionHeading {
+  background: rgb(225, 225, 225);
   padding: 14px 0;
 }
-.accordionHeading .container{
+.accordionHeading .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.accordionHeading p{
+.accordionHeading p {
   letter-spacing: 1.2px;
   font-weight: 600;
 }
 .accordionHeading span {
   cursor: pointer;
 }
-.accordionContent{
-  background: #383a7f;
+.accordionContent {
+  background: #ffffff;
   height: 0;
   opacity: 0;
   display: flex;
   overflow: hidden;
   transition: all 600ms ease-in-out;
 }
-.accordionContent.show{
+.accordionContent.show {
   height: 180px;
   opacity: 1;
 }
-.accordionContent p{
+.accordionContent p {
   font-size: 15px;
   line-height: 1.6;
+}
+
+.table {
+  width: 100%;
+  border: solid 1px black;
+}
+
+.table th {
+  text-align: left;
+}
+
+.tbody {
+  width: 100%;
+  justify-content: space-around;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.detail_icon {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
 }

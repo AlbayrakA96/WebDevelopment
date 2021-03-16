@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./WeatherCard.css";
 import { getWeatherData } from "../WeatherInfo/WeatherInfo";
 
-const WeatherCard = ({ city }) => {
+const WeatherCard = ({ city, click }) => {
   const [weatherdata, setWeatherData] = useState(null);
   const [loading, setLoading] = useState(false);
   const getData = async () => {
@@ -18,13 +18,14 @@ const WeatherCard = ({ city }) => {
     getData();
   }, []);
   return (
-    <div className="card">
+    <div className="card" onClick={click}>
       <h2 className="title">
         Weather card <i className="fa fa-cloud"></i>
       </h2>
       {weatherdata !== null ? (
         <div className="main-container">
           <h2 className="title"></h2>
+
           <h3>
             {weatherdata.name} | {weatherdata.sys.country}
           </h3>
