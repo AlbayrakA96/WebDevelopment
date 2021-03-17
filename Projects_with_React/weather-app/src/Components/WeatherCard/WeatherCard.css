@@ -30,6 +30,7 @@ body {
 }
 .main-container {
   display: flex;
+  font-family: "Quicksand", sans-serif;
   flex-direction: row;
   /* justify-content: center; */
   width: 100%;
@@ -40,13 +41,26 @@ body {
   background-color: rgba(255, 255, 255, 0.808);
 }
 
-.left {
+.left  {
   margin-left: 10px;
+  font-family: "Quicksand", sans-serif;
   width: 50%;
   display: flex;
   flex-direction: column;
   height: 100%;
   justify-content: space-around;
+}
+.left h2 {
+  font-family: "Quicksand", sans-serif;
+}
+
+.left h3{
+  font-family: "Quicksand", sans-serif;
+}
+
+.left p {
+  font-family: "Quicksand", sans-serif;
+  
 }
 
 .rechts {
@@ -58,7 +72,7 @@ body {
  
 }
 
-.weather__icon {
+.rechts .weather__icon {
   height: 100px;
   background-color: #2585d800;
   width: 100px;
@@ -74,6 +88,6 @@ body {
     transform: scale(0.8, 0.8);
   }
   100% {
-    transform: scale(1.3, 1.3);
+    transform: scale(1.3  , 1.3);
   }
 }

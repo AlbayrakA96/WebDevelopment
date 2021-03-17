@@ -2,12 +2,11 @@ import React, { useState, useEffect } from "react";
 import { getWeatherData } from "../WeatherInfo/WeatherDetail_info";
 import "./WeatherDetail.css";
 // FUNCTION WEATHERDETAIL-------------------------------------------------------------------------------------------------------
-const WeatherDetail = ({ city }) => {
+const WeatherDetail = ({ lat, lon }) => {
   const [weatherdata, setWeatherData] = useState(null);
-  const [loading, setLoading] = useState(false);
   const getData = async () => {
     try {
-      const data = await getWeatherData(city);
+      const data = await getWeatherData(lat, lon);
       setWeatherData(data);
       console.log(data);
     } catch (error) {
@@ -19,6 +18,7 @@ const WeatherDetail = ({ city }) => {
   }, []);
   // NEW SUB-FUNCTION FOR ACCORDION BELOW ///----------------------------------------------------------------------------------------
   const [active, setActive] = useState("off");
+
   const Accordion = ({ title, active, setActive }) => {
     let d = new Date(title.dt * 1000).toLocaleDateString();
     let min = Math.floor(title.temp.min);
@@ -30,11 +30,10 @@ const WeatherDetail = ({ city }) => {
 
     let icon = (
       <img
-        className="detail_icon"
+        className="detail_icon2"
         src={`http://openweathermap.org/img/wn/${title.weather[0].icon}@2x.png`}
       ></img>
     );
-    // console.log(d);
     // console.log(weatherdata);
     return (
       <div className="accordion">
@@ -70,12 +69,6 @@ const WeatherDetail = ({ city }) => {
                   <td>{night}&deg;C</td>
                 </tr>
               </tbody>
-              {/* <tfoot>
-                <tr>
-                  <td>Sum</td>
-                  <td>$180</td>
-                </tr>
-              </tfoot> */}
             </table>
           </div>
         </div>
