@@ -47,7 +47,7 @@
   transition: all 600ms ease-in-out;
 }
 .accordionContent.show {
-  height: 180px;
+  height: 130px;
   opacity: 1;
 }
 .accordionContent p {
@@ -97,3 +97,6 @@ thead {
   }
 }
 
+.hidden {
+  display: none;
+}
