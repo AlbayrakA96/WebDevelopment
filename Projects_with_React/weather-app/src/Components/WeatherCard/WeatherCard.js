@@ -3,7 +3,19 @@ import "./WeatherCard.css";
 import { getWeatherData } from "../WeatherInfo/WeatherInfo";
 import WeatherDetail from "../WeatherDetail/WeatherDetail";
 
+// import weather conditions
+import clear from "./images/clearsky.jpg";
+import clear2 from "./images/clearsky2.jpg";
 
+import broken from "./images/brokenclouds.jpg";
+import few from "./images/fewclouds.jpg";
+import mist from "./images/mist.jpg";
+import rain from "./images/rain.jpg";
+import scattered from "./images/scatteredclouds.jpg";
+import shower from "./images/showerrain.jpg";
+import snow from "./images/snow.jpg";
+import thunderstorm from "./images/thunderstorm.jpg";
+import sun from "./images/sun.gif";
 
 const WeatherCard = ({ city }) => {
   const [toggleState, setToggleState] = useState("off");
@@ -26,37 +38,69 @@ const WeatherCard = ({ city }) => {
     getData();
   }, [city]);
   return (
-    <div>
-      <div className="card" onClick={toggle}>
-        <div className="title">Weather card</div>
+    <div className="overview">
+      <div className="card_wrapper">
         {weatherdata !== null ? (
-          <div className="main-container">
-            <div className="left">
-              <h2>
-                {weatherdata.name} | {weatherdata.sys.country} 
+          <div className="card" onClick={toggle}>
+            {weatherdata.main.temp > 25 ? (
+              <img src={sun} alt="sun" id="weather-img" />
+            ) : weatherdata.weather[0].description.includes("few clouds") ? (
+              <img src={few} alt="few" id="weather-img" />
+            ) : weatherdata.weather[0].description.includes("clear sky") ? (
+              <img src={clear} alt="scattered" id="weather-img" />
+            ) : weatherdata.weather[0].description.includes(
+                "scattered clouds"
+              ) ? (
+              <img src={scattered} alt="held" id="weather-img" />
+            ) : weatherdata.weather[0].description.includes("broken clouds") ? (
+              <img src={broken} alt="helder" id="weather-img" />
+            ) : weatherdata.weather[0].description.includes("shower rain") ? (
+              <img src={shower} alt="helder" id="weather-img" />
+            ) : weatherdata.weather[0].description.includes("rain") ? (
+              <img src={rain} alt="helder" id="weather-img" />
+            ) : weatherdata.weather[0].description.includes("thunderstorm") ? (
+              <img src={thunderstorm} alt="helder" id="weather-img" />
+            ) : weatherdata.weather[0].description.includes("snow") ? (
+              <img src={snow} alt="helder" id="weather-img" />
+            ) : weatherdata.weather[0].description.includes("mist") ? (
+              <img src={mist} alt="helder" id="weather-img" />
+            ) : (
+              ""
+            )}
+            <div className="main-container">
+              <h2 className="title">
+                {weatherdata.name} <span>{weatherdata.sys.country}</span>
               </h2>
-              <h2> {weatherdata.main.temp}&deg;C</h2>
-              <h3>{weatherdata.weather[0].main}</h3>
-              <p>Min: {weatherdata.main.temp_min}&deg;C</p>
-              <p>Max: {weatherdata.main.temp_max}&deg;C</p>
-              <p>Humidity: {weatherdata.main.humidity}%</p>
-            </div>
-            <div className="rechts">
-              <img alt=''
-                className="weather__icon"
+              <img className='weather__icon'
                 src={`http://openweathermap.org/img/wn/${weatherdata.weather[0].icon}@2x.png`}
               ></img>
+              <h3>{weatherdata.main.temp}&deg;C</h3>
+              <div className="temp">
+
+              </div>
+              <div className="location">
+                <h2>
+                {weatherdata.weather[0].main}
+                </h2>
+              </div>
+              <div className="temp-range">
+                <p>min: {weatherdata.main.temp_min}&deg;C</p>
+                <p>Max: {weatherdata.main.temp_max}&deg;C</p>
+                <p> Humidity: {weatherdata.main.humidity}%</p>
+              </div>
             </div>
           </div>
         ) : null}
       </div>
-      {toggleState === "off" ? null : (
-        <WeatherDetail 
-          lat={weatherdata.coord.lat}
-          name={weatherdata.name}
-          lon={weatherdata.coord.lon}
-        />
-      )}
+      <div>
+        {toggleState === "off" ? null : (
+          <WeatherDetail
+            lat={weatherdata.coord.lat}
+            lon={weatherdata.coord.lon}
+            name={weatherdata.name}
+          />
+        )}
+      </div>
     </div>
   );
 };

@@ -3,84 +3,119 @@
 body {
   font-family: "Quicksand", sans-serif;
 }
-.card {
-  border-radius: 20px;
-  width: 450px;
-  height: 600px;
-  margin-top: 1%;
-  background: url(./sky.jfif);
-  background-size: cover;
-  background-position: center;
-  padding: 40px 0px;
-  display: flex;
-  flex-direction: column;
-  font-family: "Quicksand", sans-serif;
-}
-
-.title {
-  display: inline-block;
-  text-align: center;
-  /* align-self: center; */
-  color: rgba(0, 0, 0, 0.664);
-  font-weight: 700;
-  font-family: "Quicksand", sans-serif;
-  font-size: 35px;
-  padding: 30px 30px;
-  /* background-color: rgba(187, 187, 187, 0.295); */
-}
-.main-container {
-  display: flex;
-  font-family: "Quicksand", sans-serif;
-  flex-direction: row;
-  /* justify-content: center; */
-  width: 100%;
-  border-radius: 5px;
-  height: 250px;
-  color: rgb(0, 0, 0);
-  margin-top: 30px;
-  background-color: rgba(255, 255, 255, 0.808);
-}
-
-.left  {
-  margin-left: 10px;
-  font-family: "Quicksand", sans-serif;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-around;
-}
-.left h2 {
-  font-family: "Quicksand", sans-serif;
-}
-
-.left h3{
-  font-family: "Quicksand", sans-serif;
-}
-
-.left p {
-  font-family: "Quicksand", sans-serif;
-  
-}
-
-.rechts {
-  width: 50%;
-  background-color:rgba(148, 162, 197, 0.404);
+.overview {
+  max-width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
- 
+  flex-direction: row;
 }
 
-.rechts .weather__icon {
+.card_wrapper{
+  
+  /* height: 100vh; */
+  /* width: 350px; */
+  /* background-color: rgb(141, 95, 160); */
+  text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 1% 1px 1px 5px rgb(0, 0, 0);
+}
+.card{
+  font-family: "Quicksand", sans-serif;
+  position: relative;
+  width: 600px;
+  height: 300px;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10%;
+  padding: 20px;
+}
+
+.main-container{
+  font-family: "Quicksand", sans-serif;
+  position: absolute; 
+  background-color: rgba(255, 255, 255, 0.06);
+   backdrop-filter: blur(10px);
+  width: 40%;
+  height: auto;
+  right: 20px;
+  /* color: rgba(0, 0, 0, 0.623); */
+  border: 1px solid rgba(255, 255, 255,0.1);
+  box-shadow: 20px 20px 22px rgba(0, 0, 0,0.2);
+  /* text-align: center; */
+  /* margin-top: 303px; */
+  z-index: 2;
+  height: 100%;
+  top: 0;
+}
+#weather-img {
+  /* display: block; */
+  /* box-sizing: border-box; */
+  background-repeat: no-repeat;
+  /* background-position: fixed; */
+  background-size: fixed;
+  /* width: 100%; */
+  height: 350px;
+  position: absolute; 
+  top: -20px;
+  left: 0px; 
+  right: 0px;
+  bottom: 0px;
+  z-index: 0;
+  opacity: 0.6;
+  width: 100%;
+}
+.title{
+  font-weight: 800;
+  font-size: 40px;
+  font-family: "Quicksand", sans-serif;
+  width: 100%;
+}
+
+/* .main-container img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+} */
+
+.main-container p{
+  font-size: 15px;
+  /* font-weight: 800; */
+  font-family: "Quicksand", sans-serif;
+}
+.temp-range{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.main-container h3 {
+  font-size: 35px;
+  font-family: "Quicksand", sans-serif;
+}
+.main-container .title span {
+  color: rgba(0, 0, 0, 0.342);
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.weather__icon {
   height: 100px;
-  background-color: #2585d800;
+  background-color: #378dd800;
   width: 100px;
   color: white;
   animation: scale 6s infinite;
   transform: scale(1, 1);
   animation-direction: alternate;
- 
+  opacity: 0.7;
+}
+
+.temp h4{
+  font-family: "Quicksand", sans-serif;
 }
 
 @keyframes scale {
