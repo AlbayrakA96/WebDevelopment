@@ -6,7 +6,6 @@ import WeatherDetail from "../WeatherDetail/WeatherDetail";
 // import weather conditions
 import clear from "./images/clearsky.jpg";
 import clear2 from "./images/clearsky2.jpg";
-
 import broken from "./images/brokenclouds.jpg";
 import few from "./images/fewclouds.jpg";
 import mist from "./images/mist.jpg";
@@ -17,7 +16,7 @@ import snow from "./images/snow.jpg";
 import thunderstorm from "./images/thunderstorm.jpg";
 import sun from "./images/sun.gif";
 
-const WeatherCard = ({ city }) => {
+const WeatherCard = ({ city, date }) => {
   const [toggleState, setToggleState] = useState("off");
   const [weatherdata, setWeatherData] = useState(null);
 
@@ -46,6 +45,8 @@ const WeatherCard = ({ city }) => {
               <img src={sun} alt="sun" id="weather-img" />
             ) : weatherdata.weather[0].description.includes("few clouds") ? (
               <img src={few} alt="few" id="weather-img" />
+            )  : weatherdata.weather[0].description.includes("overcast clouds") ? (
+                <img src={few} alt="few" id="weather-img" /> 
             ) : weatherdata.weather[0].description.includes("clear sky") ? (
               <img src={clear} alt="scattered" id="weather-img" />
             ) : weatherdata.weather[0].description.includes(
@@ -71,23 +72,30 @@ const WeatherCard = ({ city }) => {
               <h2 className="title">
                 {weatherdata.name} <span>{weatherdata.sys.country}</span>
               </h2>
-              <img className='weather__icon'
+              <img
+                className="weather__icon"
                 src={`http://openweathermap.org/img/wn/${weatherdata.weather[0].icon}@2x.png`}
               ></img>
               <h3>{weatherdata.main.temp}&deg;C</h3>
-              <div className="temp">
-
-              </div>
+              <div className="temp"></div>
               <div className="location">
-                <h2>
-                {weatherdata.weather[0].main}
-                </h2>
+                <h2>{weatherdata.weather[0].description}</h2>
               </div>
               <div className="temp-range">
-                <p>min: {weatherdata.main.temp_min}&deg;C</p>
-                <p>Max: {weatherdata.main.temp_max}&deg;C</p>
-                <p> Humidity: {weatherdata.main.humidity}%</p>
+                <p><span>Min:</span> {weatherdata.main.temp_min}&deg;C</p>
+                <p><span>Max:</span> {weatherdata.main.temp_max}&deg;C</p>
+                <p><span>Humidity:</span> {weatherdata.main.humidity}%</p>
               </div>
+            </div>
+            
+            <div className="main-container1">
+                <p><span>Maandag</span>{}</p>
+                <p><span>Dinsdag</span> </p>
+                <p><span>Woensdag</span></p>
+                <p><span>Donderdag</span> </p>
+                <p><span>Vrijdag</span> </p>
+                <p><span>Zaterdag</span> </p>
+                <p><span>Zondag</span> </p>
             </div>
           </div>
         ) : null}

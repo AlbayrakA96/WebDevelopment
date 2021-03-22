@@ -26,7 +26,7 @@ const WeatherDetail = ({ lat, lon, name, key}) => {
   // NEW SUB-FUNCTION FOR ACCORDION BELOW ///----------------------------------------------------------------------------------------
   const [active, setActive] = useState("off");
 
-  const Accordion = ({ title, active, setActive }) => {
+  const Accordion = ({ title, active, setActive, day }) => {
 
     let d = new Date(title.dt * 1000).toLocaleDateString();
     let min = Math.floor(title.temp.min);
