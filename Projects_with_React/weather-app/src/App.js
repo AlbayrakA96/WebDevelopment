@@ -4,8 +4,8 @@ import WeatherCard from "./Components/WeatherCard/WeatherCard";
 const App = () => {
   return (
     <div className="App">
-      <WeatherCard city="new york" />
-      <WeatherCard city="ankara" />
+      <WeatherCard city="texas" />
+      {/* <WeatherCard city="ankara" /> */}
       <WeatherCard city="milan" />
       <WeatherCard city="moscow" />
       <WeatherCard city="dubai" />

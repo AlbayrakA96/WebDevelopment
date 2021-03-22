@@ -88,7 +88,7 @@ const WeatherCard = ({ city, date }) => {
               </div>
             </div>
             
-            <div className="main-container1">
+            {/* <div className="main-container1">
                 <p><span>Maandag</span>{}</p>
                 <p><span>Dinsdag</span> </p>
                 <p><span>Woensdag</span></p>
@@ -96,7 +96,7 @@ const WeatherCard = ({ city, date }) => {
                 <p><span>Vrijdag</span> </p>
                 <p><span>Zaterdag</span> </p>
                 <p><span>Zondag</span> </p>
-            </div>
+            </div> */}
           </div>
         ) : null}
       </div>
