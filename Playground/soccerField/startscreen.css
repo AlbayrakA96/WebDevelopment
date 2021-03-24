@@ -22,7 +22,7 @@ body {
 
 #game__goal {
     width: 100%;
-    height: 600px;
+    height: 580px;
     object-fit: cover;
     position: relative;
 }
