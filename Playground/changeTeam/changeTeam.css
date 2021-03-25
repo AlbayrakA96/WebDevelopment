@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -16,7 +18,33 @@ body {
 .team__container {
     width: 60%;
     height: 80%;
-    background-color: red;
+    background: url(../images/locker\ room.jpg);
     background-size: cover;
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.team__container h2 {
+    color: white;
+    background-color: rgba(158, 158, 158, 0.37);
+    font-size: 40px;
+    font-family: 'Press Start 2P', cursive;
+    padding: 20px 20px;
+}
+
+.team__container img {
+    width: 150px;
+    height: 150px;
+}
+
+.team__container button {
+    border: none;
+    background-color: rgba(99, 99, 99, 0.473);
+}
+.team__container button:focus {
+    outline: none;
+    border: none;
+    background-color: rgba(127, 197, 118, 0.726);
 }

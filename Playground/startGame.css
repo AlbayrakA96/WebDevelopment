@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -29,9 +31,13 @@ body {
     display: flex;
     height: 10%;
     justify-content: space-around;
+    align-items: top;
     color: white;
 }
 
+.start__buttons button {
+    font-family: 'Press Start 2P', cursive;
+}
 #play_game {
     padding: 20px;
     background-color: rgb(2, 199, 2);
@@ -52,3 +58,12 @@ body {
 #play_game:focus {
    outline: none;
 }
+
+#tg_logo {
+    justify-content: center;
+    align-items:flex-end;
+    top: 510px;
+    position: relative;
+    display: flex;
+}
+
