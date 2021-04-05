@@ -5,9 +5,9 @@ import WeatherCard from "./Components/WeatherCard/WeatherCard";
 const App = () => {
   return (
     <div className="App">
-      <WeatherCard city="texas" />
-      <WeatherCard city="milan" />
-      <WeatherCard city="moscow" />
+      <WeatherCard city="istanbul" />
+      <WeatherCard city="TORONTO" />
+      <WeatherCard city="casablanca" />
       <WeatherCard city="dubai" />
     </div>
   );

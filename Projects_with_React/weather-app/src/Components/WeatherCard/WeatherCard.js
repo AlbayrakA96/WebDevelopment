@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./WeatherCard.css";
 import { getWeatherData } from "../WeatherInfo/WeatherInfo";
 import WeatherDetail from "../WeatherDetail/WeatherDetail";
+import Clock2 from "./Clock2";
+
+import Clock from "react-live-clock";
 
 // import weather conditions
 import clear from "./images/clearsky.jpg";
@@ -19,7 +22,7 @@ import sun from "./images/sun.gif";
 const WeatherCard = ({ city, date }) => {
   const [toggleState, setToggleState] = useState("off");
   const [weatherdata, setWeatherData] = useState(null);
-
+  
   function toggle() {
     setToggleState(toggleState === "off" ? "on" : "off");
   }
@@ -37,6 +40,7 @@ const WeatherCard = ({ city, date }) => {
     getData();
   }, [city]);
   return (
+    
     <div className="overview">
       <div className="card_wrapper">
         {weatherdata !== null ? (
@@ -45,8 +49,10 @@ const WeatherCard = ({ city, date }) => {
               <img src={sun} alt="sun" id="weather-img" />
             ) : weatherdata.weather[0].description.includes("few clouds") ? (
               <img src={few} alt="few" id="weather-img" />
-            )  : weatherdata.weather[0].description.includes("overcast clouds") ? (
-                <img src={few} alt="few" id="weather-img" /> 
+            ) : weatherdata.weather[0].description.includes(
+                "overcast clouds"
+              ) ? (
+              <img src={few} alt="few" id="weather-img" />
             ) : weatherdata.weather[0].description.includes("clear sky") ? (
               <img src={clear} alt="scattered" id="weather-img" />
             ) : weatherdata.weather[0].description.includes(
@@ -72,6 +78,7 @@ const WeatherCard = ({ city, date }) => {
               <h2 className="title">
                 {weatherdata.name} <span>{weatherdata.sys.country}</span>
               </h2>
+              <Clock2  lat={weatherdata.coord.lat} lon={weatherdata.coord.lon} />
               <img
                 className="weather__icon"
                 src={`http://openweathermap.org/img/wn/${weatherdata.weather[0].icon}@2x.png`}
@@ -82,12 +89,18 @@ const WeatherCard = ({ city, date }) => {
                 <h2>{weatherdata.weather[0].description}</h2>
               </div>
               <div className="temp-range">
-                <p><span>Min:</span> {weatherdata.main.temp_min}&deg;C</p>
-                <p><span>Max:</span> {weatherdata.main.temp_max}&deg;C</p>
-                <p><span>Humidity:</span> {weatherdata.main.humidity}%</p>
+                <p>
+                  <span>Min:</span> {weatherdata.main.temp_min}&deg;C
+                </p>
+                <p>
+                  <span>Max:</span> {weatherdata.main.temp_max}&deg;C
+                </p>
+                <p>
+                  <span>Humidity:</span> {weatherdata.main.humidity}%
+                </p>
               </div>
             </div>
-            
+
             {/* <div className="main-container1">
                 <p><span>Maandag</span>{}</p>
                 <p><span>Dinsdag</span> </p>

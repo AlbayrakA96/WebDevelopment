@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { getWeatherData } from "../WeatherInfo/WeatherDetail_info";
 import "./WeatherDetail.css";
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 
+import Clock from "react-live-clock";
 
 // FUNCTION WEATHERDETAIL-------------------------------------------------------------------------------------------------------
-const WeatherDetail = ({ lat, lon, name, key}) => {
-  const { v4 } = require('uuidv4');
+const WeatherDetail = ({ lat, lon, name, key }) => {
+  const { v4 } = require("uuidv4");
   const [weatherdata, setWeatherData] = useState(null);
- 
+
   useEffect(() => {
     const getData = async () => {
       try {
@@ -22,12 +23,10 @@ const WeatherDetail = ({ lat, lon, name, key}) => {
     getData();
   }, [lat, lon]);
 
-
   // NEW SUB-FUNCTION FOR ACCORDION BELOW ///----------------------------------------------------------------------------------------
   const [active, setActive] = useState("off");
 
   const Accordion = ({ title, active, setActive, day }) => {
-
     let d = new Date(title.dt * 1000).toLocaleDateString();
     let min = Math.floor(title.temp.min);
     let max = Math.floor(title.temp.max);
@@ -39,19 +38,20 @@ const WeatherDetail = ({ lat, lon, name, key}) => {
     let id = uuidv4();
     console.log(id);
     let icon = (
-      <img alt=''
+      <img
+        alt=""
         className="detail_icon2"
         src={`http://openweathermap.org/img/wn/${title.weather[0].icon}@2x.png`}
       ></img>
     );
     // console.log(weatherdata);
     return (
-      
       <div className="accordion">
-        <div className="accordionHeading"> 
+        <div className="accordionHeading">
           <div className="container">
             {d} {icon}
             {min}/{max}&deg;C
+           
             <span onClick={() => setActive(title)}>
               {active === title ? "X" : "="}
             </span>
@@ -88,15 +88,19 @@ const WeatherDetail = ({ lat, lon, name, key}) => {
   };
   // ------------------------------------------------------------------------------------------------------------------------------
   return (
-    
-    <div className="weatherDetails" >
+    <div className="weatherDetails">
       <div className="hidden">{v4}</div>
       {weatherdata !== null ? (
         <div>
           <h3>{name}</h3>
           {weatherdata.daily.map((datum) => (
-            <div >
-              <Accordion title={datum} key={uuidv4()} active={active} setActive={setActive} />
+            <div>
+              <Accordion
+                title={datum}
+                key={uuidv4()}
+                active={active}
+                setActive={setActive}
+              />
             </div>
           ))}
         </div>
