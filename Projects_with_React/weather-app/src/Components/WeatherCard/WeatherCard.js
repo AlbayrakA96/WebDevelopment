@@ -8,7 +8,6 @@ import Clock from "react-live-clock";
 
 // import weather conditions
 import clear from "./images/clearsky.jpg";
-import clear2 from "./images/clearsky2.jpg";
 import broken from "./images/brokenclouds.jpg";
 import few from "./images/fewclouds.jpg";
 import mist from "./images/mist.jpg";
@@ -45,7 +44,7 @@ const WeatherCard = ({ city, date }) => {
       <div className="card_wrapper">
         {weatherdata !== null ? (
           <div className="card" onClick={toggle}>
-            {weatherdata.main.temp > 25 ? (
+            {weatherdata.main.temp > 1000 ? (
               <img src={sun} alt="sun" id="weather-img" />
             ) : weatherdata.weather[0].description.includes("few clouds") ? (
               <img src={few} alt="few" id="weather-img" />
