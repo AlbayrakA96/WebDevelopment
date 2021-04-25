@@ -1,15 +1,17 @@
 // Math operators-------------------------------
-// const currentYear = 2021;
-// const ageAbdus = currentYear - 1996;
-// const ageFriend = currentYear - 1999;
-// console.log(ageAbdus, ageFriend);
+/*
+const currentYear = 2021;
+const ageAbdus = currentYear - 1996;
+const ageFriend = currentYear - 1999;
+console.log(ageAbdus, ageFriend);
 
-// console.log(ageAbdus * 2, ageAbdus / 10, 2 ** 3);
-// 2 ** 3 means 2 to the power of 3 = 2 * 2 * 2
+console.log(ageAbdus * 2, ageAbdus / 10, 2 ** 3);
+2 ** 3 means 2 to the power of 3 = 2 * 2 * 2
 
-// const firstName = "Abdusselam";
-// const lastName = "Albayrak";
-// console.log(firstName + " " + lastName);
+const firstName = "Abdusselam";
+const lastName = "Albayrak";
+console.log(firstName + " " + lastName);
+*/
 
 // Assignment operators---------------------------
 /* let x = 10 + 5; // 15
@@ -37,89 +39,95 @@ console.log(x); */
 // console.log("averageAge:", averageAge);
 
 // Coding Challange #1 ----------------------------------------------------------------
+/*
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
+const massMark = 95;
+const heightMark = 1.88;
+const massJohn = 85;
+const heightJohn = 1.76;
 
-// const massMark = 78;
-// const heightMark = 1.69;
-// const massJohn = 92;
-// const heightJohn = 1.95;
-// const massMark = 95;
-// const heightMark = 1.88;
-// const massJohn = 85;
-// const heightJohn = 1.76;
+const BMIMark = massMark / heightMark ** 2;
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+const markHigherBMI = BMIMark > BMIJohn;
 
-// const BMIMark = massMark / heightMark ** 2;
-// const BMIJohn = massJohn / (heightJohn * heightJohn);
-// const markHigherBMI = BMIMark > BMIJohn;
-
-// console.log(BMIMark, BMIJohn, markHigherBMI);
+console.log(BMIMark, BMIJohn, markHigherBMI);
+*/
 
 // Strings and Template literals -----------------------------------------------------------
+/*
+const firstName = "Abdusselam";
+const job = "front-end developer";
+const birthYear = 1996;
+const currentYear = 2021;
 
-// const firstName = "Abdusselam";
-// const job = "front-end developer";
-// const birthYear = 1996;
-// const currentYear = 2021;
+const abdusInfo =
+  "I'm " +
+  firstName +
+  ", a " +
+  (currentYear - birthYear) +
+  "years old " +
+  job +
+  "!";
+console.log(abdusInfo);
 
-// const abdusInfo =
-//   "I'm " +
-//   firstName +
-//   ", a " +
-//   (currentYear - birthYear) +
-//   "years old " +
-//   job +
-//   "!";
-// console.log(abdusInfo);
+const abdusInfoNew = `I'm ${firstName}, a ${
+  currentYear - birthYear
+} year old ${job}!`;
+console.log(`Just a regular string`);
+console.log(`String
+multiple
+lines`);
+*/
 
-// const abdusInfoNew = `I'm ${firstName}, a ${
-//   currentYear - birthYear
-// } year old ${job}!`;
-// console.log(`Just a regular string`);
-// console.log(`String
-// multiple
-// lines`);
+/*
+Taking decicisions if / else statemens----------------------------------------------------------------
+const age = 15;
+const isOldEnough = age >= 18;
 
-// Taking decicisions if / else statemens----------------------------------------------------------------
-// const age = 15;
-// const isOldEnough = age >= 18;
+if (age >= 18) {
+  console.log("Sarah can start driving license 👍");
+} else {
+  const yearsLeft = 18 - age;
+  console.log(`Sarah is too young, wait another ${yearsLeft} years :)`);
+}
 
-// if (age >= 18) {
-//   console.log("Sarah can start driving license 👍");
-// } else {
-//   const yearsLeft = 18 - age;
-//   console.log(`Sarah is too young, wait another ${yearsLeft} years :)`);
-// }
+const birthYear = 2012;
 
-// const birthYear = 2012;
-
-// let century;
-// if (birthYear <= 2000) {
-//   century = 20;
-// } else {
-//   century = 21;
-// }
-// console.log(`${century} century`);
+let century;
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(`${century} century`);
+*/
 
 // Coding Challange #2 ----------------------------------------------------------------
-// const massMark = 78;
-// const heightMark = 1.69;
-// const massJohn = 92;
-// const heightJohn = 1.95;
-// const massMark = 95;
-// const heightMark = 1.88;
-// const massJohn = 85;
-// const heightJohn = 1.76;
+/*
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
+const massMark = 95;
+const heightMark = 1.88;
+const massJohn = 85;
+const heightJohn = 1.76;
 
-// const BMIMark = massMark / heightMark ** 2;
-// const BMIJohn = massJohn / (heightJohn * heightJohn);
-// const markHigherBMI = BMIMark > BMIJohn;
+const BMIMark = massMark / heightMark ** 2;
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+const markHigherBMI = BMIMark > BMIJohn;
 
-// console.log(BMIMark, BMIJohn, markHigherBMI);
+console.log(BMIMark, BMIJohn, markHigherBMI);
 
-// if (BMIMark > BMIJohn) {
-//   console.log(`Mark's BMI ${BMIMark} is higer than John's ${BMIJohn}`);
-// } else {
-//   console.log(`John's ${BMIJohn} is higer than Mark's BMI ${BMIMark}`);
-// }
+if (BMIMark > BMIJohn) {
+  console.log(`Mark's BMI ${BMIMark} is higer than John's ${BMIJohn}`);
+} else {
+  console.log(`John's ${BMIJohn} is higer than Mark's BMI ${BMIMark}`);
+}
+*/
 
 // Type Conversion and Coercion--------------------------------------
 // type conversion ------------
@@ -238,8 +246,39 @@ console.log(x); */
 //   console.console.log();
 // }
 
-let country = "Holland";
-let continent = "Europe";
-let population = 18000000;
+// let country = "Holland";
+// let continent = "Europe";
+// let population = 18000000;
 
-console.log(country, continent, population);
+// console.log(country, continent, population);
+
+// LECTURE: Data Types
+/*
+let isIsland = "Holland";
+isIsland = false;
+
+let language;
+console.log(isIsland, language);
+*/
+
+// Let, Const and Var
+// const language = 'Nederlands';
+
+//LECTURE Basic Operators
+/*
+let population = 18;
+const halfPopulation = population / 2;
+console.log(halfPopulation);
+const country = "Holland";
+const continent = "Europe";
+const language = "Dutch";
+
+let Finland = 6;
+console.log(population > Finland);
+
+console.log(population < 33);
+
+let description = country + " is in " + continent + "," + " and its " + population + "people speak " + language;
+
+console.log(description);
+*/
