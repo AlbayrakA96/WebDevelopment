@@ -237,3 +237,9 @@ console.log(x); */
 // if (averageDolphins > averageKoalas) {
 //   console.console.log();
 // }
+
+let country = "Holland";
+let continent = "Europe";
+let population = 18000000;
+
+console.log(country, continent, population);
