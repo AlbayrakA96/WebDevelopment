@@ -1,17 +1,16 @@
-# WebDevelopment
+TechGrounds WebDevelopment Course
 
 
-<!-- import React, { useState } from 'React'
+This is my personal Test environment for the TechGrounds WebDevelopment course. For complete finished projects look into the differant repo's.
 
-function HelloWorld(props) {
-  const [count, setCount] = useState(0);
 
-  return ( 
-   <div>
-    <p>You clicked {count} times</p> 
-    <button onClick={() => setCount(count + 1)}>
-	Click Me
-	</button>
-     </div>
-	);
-} -->
+This course includes:
+6 month training
+HTML
+CSS/Sass
+Bootstrap
+JavaScript
+Scrum/Agile
+Front-end path
+React.js
+NPM package

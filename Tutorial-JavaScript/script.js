@@ -231,9 +231,9 @@ console.log(x); */
 // § Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
 // § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 
-const averageDolphins = (96 + 108 + 89) / 3;
-const averageKoalas = (88 + 91 + 110) / 3;
+// const averageDolphins = (96 + 108 + 89) / 3;
+// const averageKoalas = (88 + 91 + 110) / 3;
 
-if (averageDolphins > averageKoalas) {
-  console.console.log();
-}
+// if (averageDolphins > averageKoalas) {
+//   console.console.log();
+// }
