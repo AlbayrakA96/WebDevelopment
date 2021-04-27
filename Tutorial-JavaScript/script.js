@@ -282,3 +282,21 @@ let description = country + " is in " + continent + "," + " and its " + populati
 
 console.log(description);
 */
+
+// Operator Precedence
+
+// Coding Challenge #3
+
+// const avDolphins = Math.floor((1000 + 95 + 123) / 3);
+// const avKoalas = Math.floor((1 + 95 + 123) / 3);
+// if (avDolphins > avKoalas && avDolphins >= 100) {
+//     console.log(`The winner are the Dolphins with a score of ${avDolphins}`);
+// } else if (avKoalas > avDolphins && avKoalas >= 100) {
+//     console.log(`The winner are the Koalas with a score of ${avKoalas}`);
+// }
+// else if (avDolphins === avKoalas && avKoalas >= 100 && avDolphins >= 100) {
+//     console.log(`The game has tied Koalas ${avKoalas}, Dolphins ${avDolphins}`);
+// }
+// else {
+//     console.log(`There is no winner! SCORE IS BELOW: 100, Koalas:${avKoalas}, Dolphins:${avDolphins}`);
+// }
