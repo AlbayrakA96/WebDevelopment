@@ -79,3 +79,81 @@ const kledingDetails = function (naam, schoenmaat) {
 }
 const man1 = kledingDetails("Sayf", 41);
 console.log(man1); */
+
+// Arrow functions
+// Arrow function
+/* const calAge3 = birthYear => 2037 - birthYear;
+const age3 = calAge3(1991);
+console.log(age3);
+const yearsRetirment = (birthYear, firstName) => {
+    const age = 2037 - birthYear;
+    const retirement = 65 - age;
+    // return retirement;
+    return `${firstName} retires in ${retirement} years`;
+}
+const percentageOfWorld3 = (country, population) => {
+    const perc = Math.round((population / 7900) * 100);
+    return `${country} has ${population} Million people, its about ${perc}percent of the world`;
+}
+const nation = percentageOfWorld3("Colombia", 50);
+console.log(nation); */
+
+// Functions calling other functions -----------------------------------------
+/* function cutFruitPieces(fruit) {
+  return fruit * 8;
+}
+
+function fruitProcessor(apples, oranges) {
+  const appelPieces = cutFruitPieces(apples);
+  const orangePieces = cutFruitPieces(oranges);
+
+  const juice = `Juice with ${appelPieces} piece of apples and ${orangePieces} piece of oranges.`;
+  return juice;
+}
+
+const milkshake = fruitProcessor(2, 3);
+console.log(milkshake); */
+/* const percent1 = (population) => {
+    const output = (population / 7900) * 100;
+    return output;
+}
+const describePopulation = (country, population) => {
+    const percentage = percent1(population);
+    return `${country} has ${population} million people,
+    which is about ${percentage} % of the world. `;
+}
+const nation5 = describePopulation("Holland", 18);
+console.log(nation5); */
+
+// Review functions
+// const calcAge = function (birthYear) {
+//   return 2021 - birthYear;
+// };
+
+// const yearsUntilRetirement = function (birthYear, firstName) {
+//   const age = calcAge(birthYear);
+//   const retirement = 65 - age;
+
+//   if (retirement > 0) {
+//     console.log(`${firstName} retires in ${retirement} years`);
+//     return retirement;
+//   } else {
+//     console.log(`${firstName} has already retired`);
+//     return "Je hoeft niet meer te werken";
+//   }
+
+//   //   return `${firstName} retires in ${retirement} years`;
+// };
+
+// console.log(yearsUntilRetirement(1996, "Abdusselam"));
+// console.log(yearsUntilRetirement(1906, "Abdusselam"));
+
+// const percent1 = (population) => {
+//   const output = (population / 7900) * 100;
+//   return output;
+// };
+// const describePopulation = (country, population) => {
+//   const percentage = percent1(population);
+//   return `${country} has ${population} million people,
+//     which is about ${percentage} % of the world. `;
+// };
