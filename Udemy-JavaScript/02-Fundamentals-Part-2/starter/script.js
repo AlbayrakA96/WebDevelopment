@@ -157,3 +157,22 @@ console.log(nation5); */
 //   return `${country} has ${population} million people,
 //     which is about ${percentage} % of the world. `;
 // };
+const voortgangCursus = (module) => Math.round((module / 21) * 100);
+const checkStatus = (avgStudent) => {
+  const avgStudent = voortgangCursus(5);
+  if (avgStudent > 0 && avgStudent < 15) {
+    console.log(`Student heeft ${avgStudent} % af, ga door naar de module Functions`);
+  } else if (avgStudent >= 15 && avgStudent < 40) {
+    console.log(`Student heeft ${avgStudent} % af ga door naar de module Arrays`);
+  } else if (avgStudent >= 40 && avgStudent < 70) {
+    console.log(`Student heeft ${avgStudent} % af ga door naar de module Objects`);
+  } else if (avgStudent >= 70 && avgStudent < 99) {
+    console.log(`Student heeft ${avgStudent}% af ga door naar de coding Challange`);
+  } else if (avgStudent == 100) {
+    console.log(`Gefelicteerd! Student heeft ${avgStudent} % de module is succesvol afgerond`);
+  } else {
+    console.log("Start de module");
+  }
+};
+checkStatus();
+// IAM_Sayf. & Abdusselam
