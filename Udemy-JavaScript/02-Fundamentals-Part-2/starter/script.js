@@ -144,6 +144,20 @@ console.log(nation5); */
 
 //   //   return `${firstName} retires in ${retirement} years`;
 // };
+// const yearsUntilRetirement = function (birthYear, firstName) {
+//   const age = calcAge(birthYear);
+//   const retirement = 65 - age;
+
+//   if (retirement > 0) {
+//     console.log(`${firstName} retires in ${retirement} years`);
+//     return retirement;
+//   } else {
+//     console.log(`${firstName} has already retired`);
+//     return "Je hoeft niet meer te werken";
+//   }
+
+//   //   return `${firstName} retires in ${retirement} years`;
+// };
 
 // console.log(yearsUntilRetirement(1996, "Abdusselam"));
 // console.log(yearsUntilRetirement(1906, "Abdusselam"));
