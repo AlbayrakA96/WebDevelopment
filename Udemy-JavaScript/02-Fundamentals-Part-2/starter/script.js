@@ -197,3 +197,44 @@ console.log(neoCoin);
 
 cryptoCoin.push("Syscoin");
 console.log(cryptoCoin);
+
+const pricePrediction = (crypto) => {
+  cryptoCoin;
+  if (crypto === "Neo") {
+    return "98.5";
+  }
+};
+
+pricePrediction("Neo");
+
+let cryptoCoin = ["Neo", "Ethereum", "Bitcoin", "XRP"];
+let neoCoin = cryptoCoin[0];
+console.log(neoCoin);
+
+cryptoCoin.push("Syscoin");
+console.log(cryptoCoin);
+
+const pricePrediction = (crypto) => {
+  cryptoCoin;
+  if (crypto === "Neo") {
+    return "98.5";
+  }
+};
+
+pricePrediction("Neo");
+
+let cryptoCoin = ["Neo", "Ethereum", "Bitcoin", "XRP"];
+let neoCoin = cryptoCoin[0];
+console.log(neoCoin);
+
+cryptoCoin.push("Syscoin");
+console.log(cryptoCoin);
+
+const pricePrediction = (crypto) => {
+  cryptoCoin;
+  if (crypto === "Neo") {
+    return "98.5";
+  }
+};
+
+pricePrediction("Neo");
