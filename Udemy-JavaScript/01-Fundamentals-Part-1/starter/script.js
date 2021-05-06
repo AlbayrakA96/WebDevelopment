@@ -339,18 +339,3 @@ console.log(description);
 // const markHigherBMI = markBMI > johnBMI;
 
 // console.log(markHigherBMI);
-
-// if (markBMI < johnBMI) {
-//   console.log(`Mark's BMI is higher than John's ${markBMI}`);
-// } else {
-//   console.log(`Johns BMI is higher ${johnBMI}`);
-// }
-
-const numbers = [3, 44, 99, 100];
-
-const names = ["irtiza", "abdusselam", "sayf"];
-
-document.querySelector(".headerTitle"); 
-  if (text.length > 10) {
-      Long name
-  }

@@ -191,50 +191,34 @@ console.log(nation5); */
 // checkStatus();
 // IAM_Sayf. & Abdusselam
 
-let cryptoCoin = ["Neo", "Ethereum", "Bitcoin", "XRP"];
-let neoCoin = cryptoCoin[0];
-console.log(neoCoin);
+// Objects ---------------------------------------------------------------
 
-cryptoCoin.push("Syscoin");
-console.log(cryptoCoin);
+// const abdusArray = ["Abdusselam", "Albayrak", 2021 - 1996, "Trainee", ["Sayf", "Irza", "Yassin"]];
 
-const pricePrediction = (crypto) => {
-  cryptoCoin;
-  if (crypto === "Neo") {
-    return "98.5";
-  }
+// console.log(abdusArray[4]);
+
+const abdus = {
+  firstName: "Abdusselam",
+  lastName: "Albayrak",
+  age: 18,
+  job: "Student",
+  friends: ["Yassin", "Sayf"],
+  location: "Zoetermeer",
 };
 
-pricePrediction("Neo");
+console.log(abdus);
 
-let cryptoCoin = ["Neo", "Ethereum", "Bitcoin", "XRP"];
-let neoCoin = cryptoCoin[0];
-console.log(neoCoin);
+console.log(abdus.lastName);
+console.log(abdus["lastName"]);
 
-cryptoCoin.push("Syscoin");
-console.log(cryptoCoin);
+const nameKey = "Name";
+console.log(abdus["first" + nameKey]);
+console.log(abdus["last" + nameKey]);
 
-const pricePrediction = (crypto) => {
-  cryptoCoin;
-  if (crypto === "Neo") {
-    return "98.5";
-  }
-};
+const interestedIn = prompt("What do you want to know about Abdus? Choose between firstName, lastName, age, job, location, and friends");
 
-pricePrediction("Neo");
-
-let cryptoCoin = ["Neo", "Ethereum", "Bitcoin", "XRP"];
-let neoCoin = cryptoCoin[0];
-console.log(neoCoin);
-
-cryptoCoin.push("Syscoin");
-console.log(cryptoCoin);
-
-const pricePrediction = (crypto) => {
-  cryptoCoin;
-  if (crypto === "Neo") {
-    return "98.5";
-  }
-};
-
-pricePrediction("Neo");
+if (abdus[interestedIn]) {
+  console.log(abdus[interestedIn]);
+} else {
+  console.log("Wrong request");
+}
