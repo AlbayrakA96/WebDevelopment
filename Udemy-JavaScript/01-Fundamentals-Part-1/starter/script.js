@@ -308,3 +308,49 @@ console.log(description);
 // const tip20 = bill * 0.20;
 // const tip = bill >= 50 && bill <= 300 ? tip15 : tip20;
 // console.log(`The bill was $${bill},- the tip was $${tip}, and the total value = ${bill + tip},-`);
+
+// const MarkWeight = 78;
+// const MarkHeight = 1.69;
+
+// const JohnWeight = 92;
+// const JohnHeight = 1.95;
+
+// const BmiMark = MarkWeight / (MarkHeight * MarkHeight);
+// console.log(BmiMark);
+
+// const BmiJohn = JohnWeight / (JohnHeight * JohnHeight);
+// console.log(BmiJohn);
+
+// const markHigherBMI = BmiMark > BmiJohn;
+// console.log(markHigherBMI);
+
+// const MarkWeight = 95;
+// const MarkHeight = 1.88;
+
+// const JohnWeight = 85;
+// const JohnHeight = 1.76;
+
+// const markBMI = MarkWeight / (MarkHeight * MarkHeight);
+// const johnBMI = JohnWeight / (JohnHeight * JohnHeight);
+
+// console.log(markBMI);
+// console.log(johnBMI);
+
+// const markHigherBMI = markBMI > johnBMI;
+
+// console.log(markHigherBMI);
+
+// if (markBMI < johnBMI) {
+//   console.log(`Mark's BMI is higher than John's ${markBMI}`);
+// } else {
+//   console.log(`Johns BMI is higher ${johnBMI}`);
+// }
+
+const numbers = [3, 44, 99, 100];
+
+const names = ["irtiza", "abdusselam", "sayf"];
+
+document.querySelector(".headerTitle"); 
+  if (text.length > 10) {
+      Long name
+  }
