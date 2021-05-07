@@ -339,3 +339,43 @@ console.log(description);
 // const markHigherBMI = markBMI > johnBMI;
 
 // console.log(markHigherBMI);
+
+// const massMark = 78;
+// const heightMark = 1.69;
+// const massJohn = 92;
+// const heightJohn = 1.95;
+
+// const BMIJohn = massJohn / (heightJohn * heightJohn);
+// const BMIMark = massMark / (heightMark * heightMark);
+// console.log(BMIJohn);
+// console.log(BMIMark);
+// const markHigherBMI = BMIMark > BMIJohn;
+
+// if (BMIMark > BMIJohn) {
+//   console.log(`Mark's BMI ${BMIMark} is higher than John's`);
+// } else {
+//   console.log(`John's BMI ${BMIJohn} is higher than Mark's!`);
+// }
+
+// const dolphinsAverage = (96 + 108 + 89) / 3;
+// console.log(dolphinsAverage);
+
+// const koalasAverage = (88 + 91 + 110) / 3;
+// console.log(koalasAverage);
+
+// if (dolphinsAverage > koalasAverage && dolphinsAverage >= 100) {
+//   console.log(`dolphins are the winners `);
+// } else if (dolphinsAverage < koalasAverage) {
+//   console.log(`koalas are the winners`);
+// } else {
+//   console.log(`draw`);
+// }
+
+// const number = 99;
+// const number1 = "99";
+
+// // console.log(typeof number1);
+
+// if (number === number1) {
+//   console.log("same value");
+// }

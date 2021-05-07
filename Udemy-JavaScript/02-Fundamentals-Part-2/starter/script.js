@@ -197,28 +197,42 @@ console.log(nation5); */
 
 // console.log(abdusArray[4]);
 
+// console.log(abdus);
+
+// console.log(abdus.lastName);
+// console.log(abdus["lastName"]);
+
+// const nameKey = "Name";
+// console.log(abdus["first" + nameKey]);
+// console.log(abdus["last" + nameKey]);
+
+// const interestedIn = prompt("What do you want to know about Abdus? Choose between firstName, lastName, age, job, location, and friends");
+
+// if (abdus[interestedIn]) {
+//   console.log(abdus[interestedIn]);
+// } else {
+//   console.log("Wrong request");
+// }
+
+// abdus.country = "Holland";
+// abdus["linkedin"] = "@albayraka96";
+
+// console.log(abdus);
+
 const abdus = {
   firstName: "Abdusselam",
   lastName: "Albayrak",
   age: 18,
+  birthYear: 1996,
   job: "Student",
   friends: ["Yassin", "Sayf"],
   location: "Zoetermeer",
+  country: "Holland",
+  hasDriversLicense: true,
+
+  calcAge: function () {
+    return 2021 - this.birthYear;
+  },
 };
 
-console.log(abdus);
-
-console.log(abdus.lastName);
-console.log(abdus["lastName"]);
-
-const nameKey = "Name";
-console.log(abdus["first" + nameKey]);
-console.log(abdus["last" + nameKey]);
-
-const interestedIn = prompt("What do you want to know about Abdus? Choose between firstName, lastName, age, job, location, and friends");
-
-if (abdus[interestedIn]) {
-  console.log(abdus[interestedIn]);
-} else {
-  console.log("Wrong request");
-}
+console.log(abdus.calcAge());
