@@ -219,20 +219,76 @@ console.log(nation5); */
 
 // console.log(abdus);
 
-const abdus = {
-  firstName: "Abdusselam",
-  lastName: "Albayrak",
-  age: 18,
-  birthYear: 1996,
-  job: "Student",
-  friends: ["Yassin", "Sayf"],
-  location: "Zoetermeer",
-  country: "Holland",
-  hasDriversLicense: true,
+// const abdus = {
+//   firstName: "Abdusselam",
+//   lastName: "Albayrak",
+//   age: 18,
+//   birthYear: 1996,
+//   job: "Student",
+//   friends: ["Yassin", "Sayf"],
+//   location: "Zoetermeer",
+//   country: "Holland",
+//   hasDriversLicense: true,
 
-  calcAge: function () {
-    return 2021 - this.birthYear;
+//   calcAge: function () {
+//     return 2021 - this.birthYear;
+//   },
+// };
+
+// console.log(abdus.calcAge());
+
+// Coding Challenge #3 ----------------------------------------------------------------
+
+// const markInfo = {
+//   fullName: "Mark Miller",
+//   mass: 78,
+//   height: 1.69,
+//   calcBMI: function () {
+//     this.bmi = this.mass / (this.height * this.height);
+//     return this.bmi;
+//   },
+// };
+
+// const johnInfo = {
+//   fullName: "John Smith",
+//   mass: 192,
+//   height: 1.95,
+//   calcBMI: function () {
+//     this.bmi = this.mass / (this.height * this.height);
+//     return this.bmi;
+//   },
+// };
+
+// markInfo.calcBMI();
+// johnInfo.calcBMI();
+
+// console.log(markInfo.bmi, johnInfo.bmi);
+
+// if (markInfo.bmi > johnInfo.bmi) {
+//   console.log(`${markInfo.fullName}'s BMI (${markInfo.bmi}) is higher than ${johnInfo.fullName}'s BMI (${johnInfo.bmi})`);
+// } else if (johnInfo.bmi > mariInfo.bmi) {
+//   console.log(`${johnInfo.fullName}'s BMI (${johnInfo.bmi}) is higher than ${markInfo.fullName}'s BMI (${markInfo.bmi})`);
+// }
+const Ferrari = {
+  model: "Testarossa",
+  topSpeed: 322,
+  weight: 2000,
+  distance: 100,
+  color: ["Enzo red", "Speed Yellow"],
+  meterSecond: function () {
+    this.Sec = (this.topSpeed * 1000) / 3600;
+    return this.Sec;
+  },
+  calcSpeed: function () {
+    this.time = this.distance / this.Sec;
+    // return this.time
+    this.roundTime = Math.round(this.time * 100) / 100;
+    return this.roundTime;
   },
 };
-
-console.log(abdus.calcAge());
+Ferrari.meterSecond();
+Ferrari.calcSpeed();
+// Ferrari.calcSpeed();
+console.log(
+  `The Ferrari ${Ferrari.model} has a Topspeed of ${Ferrari.topSpeed} km/h  this means in Max speed it does 100 meters in ${Ferrari.roundTime} seconds.`
+);
