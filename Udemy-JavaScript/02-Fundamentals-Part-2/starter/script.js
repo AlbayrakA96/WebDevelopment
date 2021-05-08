@@ -269,26 +269,55 @@ console.log(nation5); */
 // } else if (johnInfo.bmi > mariInfo.bmi) {
 //   console.log(`${johnInfo.fullName}'s BMI (${johnInfo.bmi}) is higher than ${markInfo.fullName}'s BMI (${markInfo.bmi})`);
 // }
-const Ferrari = {
-  model: "Testarossa",
-  topSpeed: 322,
-  weight: 2000,
-  distance: 100,
-  color: ["Enzo red", "Speed Yellow"],
-  meterSecond: function () {
-    this.Sec = (this.topSpeed * 1000) / 3600;
-    return this.Sec;
-  },
-  calcSpeed: function () {
-    this.time = this.distance / this.Sec;
-    // return this.time
-    this.roundTime = Math.round(this.time * 100) / 100;
-    return this.roundTime;
-  },
-};
-Ferrari.meterSecond();
-Ferrari.calcSpeed();
+// const Ferrari = {
+//   model: "Testarossa",
+//   topSpeed: 322,
+//   weight: 2000,
+//   distance: 100,
+//   color: ["Enzo red", "Speed Yellow"],
+//   meterSecond: function () {
+//     this.Sec = (this.topSpeed * 1000) / 3600;
+//     return this.Sec;
+//   },
+//   calcSpeed: function () {
+//     this.time = this.distance / this.Sec;
+//     // return this.time
+//     this.roundTime = Math.round(this.time * 100) / 100;
+//     return this.roundTime;
+//   },
+// };
+// Ferrari.meterSecond();
 // Ferrari.calcSpeed();
-console.log(
-  `The Ferrari ${Ferrari.model} has a Topspeed of ${Ferrari.topSpeed} km/h  this means in Max speed it does 100 meters in ${Ferrari.roundTime} seconds.`
-);
+// // Ferrari.calcSpeed();
+// console.log(
+//   `The Ferrari ${Ferrari.model} has a Topspeed of ${Ferrari.topSpeed} km/h  this means in Max speed it does 100 meters in ${Ferrari.roundTime} seconds.`
+// );
+
+// Iteration The for loop ------------------------------------------
+// for loop keeps running while condition is true --------------------------------
+
+// const abdusArray = ["Abdus", "Albayrak", 2021 - 1996, "Student", ["Yassin", "Sayf"], true];
+
+// const types = [];
+
+// for (let i = 0; i < abdusArray.length; i++) {
+//   console.log(abdusArray[i], typeof abdusArray[i]);
+
+//   types[i] = typeof abdusArray[i];
+// }
+
+// console.log(types);
+
+// const years = [1970, 1974, 1995, 1996, 2012];
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+//   ages.push(2021 - years[i]);
+// }
+// console.log(ages);
+
+// continue and break
+
+const abdusArray = ["Abdus", "Albayrak", 2021 - 1996, "Student", ["Yassin", "Sayf"]];
+
+//
