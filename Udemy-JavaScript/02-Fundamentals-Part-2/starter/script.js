@@ -318,6 +318,73 @@ console.log(nation5); */
 
 // continue and break
 
-const abdusArray = ["Abdus", "Albayrak", 2021 - 1996, "Student", ["Yassin", "Sayf"]];
+// const abdusArray = ["Abdus", "Albayrak", 2021 - 1996, "Student", ["Yassin", "Sayf"]];
 
 //
+// for (let i = abdusArray.length - 1; i >= 0; i--) {
+//   console.log(i, abdusArray[i]);
+// }
+
+// for (let excercise = 1; excercise <= 4; excercise++) {
+//   console.log(`------------------ Starting exercise ${excercise}`);
+
+//   for (let rep = 1; rep < 6; rep++) {
+//     console.log(`Excersie ${excercise}: Lifting weight repetition ${rep}`);
+//   }
+// }
+
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lifting weights repetition ${rep}`);
+// }
+
+// let rep = 1;
+// while (rep <= 10) {
+//   console.log(`WHILE: Lifting weights repetition ${rep}`);
+//   rep++;
+// }
+
+// let dice = Math.trunc(Math.random() * 6) + 1;
+
+// while (dice !== 6) {
+//   console.log(`You rolled a ${dice}`);
+//   dice = Math.trunc(Math.random() * 6) + 1;
+//   if (dice === 6) console.log(`You've rolled a 6`);
+// }
+
+// Coding challenge #4 ------------------------------------------
+
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// const tips = [];
+// const totals = [];
+// const calcTip = (bills) => {
+//     if (bills >= 50 && bills <= 300) {
+//         const bill = bills * 0.15;
+//         return bill;
+//     } else {
+//         const bill = bills * 0.20;
+//         return bill;
+//     }
+// }
+// for (i = 0; i < bills.length; i++) {
+//     const tip = calcTip(bills[i]);
+//     tips.push(tip);
+//     totals.push(tip + bills[i]);
+// }
+// console.log(tips);
+// console.log(totals);
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// const sum = [];
+// for (i = 0; i < arr.length; i++) {
+//     arr[i] = arr[i]
+//     for (sum = 0; sum.length)
+// }
+// const calcAverage = function (arr) {
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         sum = sum + arr[i];
+//         // sum += arr[i];
+//     }
+//     console.log(sum);
+//     return sum / arr.length;
+// }
+// console.log(calcAverage(bills));
