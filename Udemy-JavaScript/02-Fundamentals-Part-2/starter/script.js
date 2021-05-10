@@ -269,29 +269,29 @@ console.log(nation5); */
 // } else if (johnInfo.bmi > mariInfo.bmi) {
 //   console.log(`${johnInfo.fullName}'s BMI (${johnInfo.bmi}) is higher than ${markInfo.fullName}'s BMI (${markInfo.bmi})`);
 // }
-// const Ferrari = {
-//   model: "Testarossa",
-//   topSpeed: 322,
-//   weight: 2000,
-//   distance: 100,
-//   color: ["Enzo red", "Speed Yellow"],
-//   meterSecond: function () {
-//     this.Sec = (this.topSpeed * 1000) / 3600;
-//     return this.Sec;
-//   },
-//   calcSpeed: function () {
-//     this.time = this.distance / this.Sec;
-//     // return this.time
-//     this.roundTime = Math.round(this.time * 100) / 100;
-//     return this.roundTime;
-//   },
-// };
-// Ferrari.meterSecond();
+const Ferrari = {
+  model: "Testarossa",
+  topSpeed: 322,
+  weight: 2000,
+  distance: 100,
+  color: ["Enzo red", "Speed Yellow"],
+  meterSecond: function () {
+    this.Sec = (this.topSpeed * 1000) / 3600;
+    return this.Sec;
+  },
+  calcSpeed: function () {
+    this.time = this.distance / this.Sec;
+    // return this.time
+    this.roundTime = Math.round(this.time * 100) / 100;
+    return this.roundTime;
+  },
+};
+Ferrari.meterSecond();
+Ferrari.calcSpeed();
 // Ferrari.calcSpeed();
-// // Ferrari.calcSpeed();
-// console.log(
-//   `The Ferrari ${Ferrari.model} has a Topspeed of ${Ferrari.topSpeed} km/h  this means in Max speed it does 100 meters in ${Ferrari.roundTime} seconds.`
-// );
+console.log(
+  `The Ferrari ${Ferrari.model} has a Topspeed of ${Ferrari.topSpeed} km/h  this means in Max speed it does 100 meters in ${Ferrari.roundTime} seconds.`
+);
 
 // Iteration The for loop ------------------------------------------
 // for loop keeps running while condition is true --------------------------------
@@ -325,13 +325,13 @@ console.log(nation5); */
 //   console.log(i, abdusArray[i]);
 // }
 
-// for (let excercise = 1; excercise <= 4; excercise++) {
-//   console.log(`------------------ Starting exercise ${excercise}`);
+for (let excercise = 1; excercise <= 4; excercise++) {
+  console.log(`------------------ Starting exercise ${excercise}`);
 
-//   for (let rep = 1; rep < 6; rep++) {
-//     console.log(`Excersie ${excercise}: Lifting weight repetition ${rep}`);
-//   }
-// }
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Excersie ${excercise}: Lifting weight repetition ${rep}`);
+  }
+}
 
 // for (let rep = 1; rep <= 10; rep++) {
 //   console.log(`Lifting weights repetition ${rep}`);
@@ -388,3 +388,16 @@ console.log(nation5); */
 //     return sum / arr.length;
 // }
 // console.log(calcAverage(bills));
+
+// Coding challenge Developer skills
+// const data1 = [17, 21, 23];
+// const data2 = [17, 21, 23, -5, 0, 4];
+// const printForecast = function (arr) {
+//     let out = '';
+//     for (let i = 0; i < arr.length; i++) {
+//         out = out + `${arr[i]}ºC in ${[i + 1]} days...`;
+//     }
+//     console.log('...' + out);
+// }
+//  printForecast(data1);
+// printForecast(data2);
