@@ -14,8 +14,7 @@ let playing = true;
 
 
 resetGame.addEventListener("click",function() {
-    scoreBord.textContent = 0;
-    goalText.classList.add("hidden");
+    location.reload();
 })
 
 

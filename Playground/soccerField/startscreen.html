@@ -9,20 +9,22 @@
   </head>
 
   <body>
-      <div id="game_wrapper">
-        <p id="game--goalText" class="game__goal__text1 hidden"></p>
-        
-        <div class="game__container">
-            <div>
-                <a href="../changeTeam/changeTeam.html"><button id="play_game">Change team</button></a>
-                
-                <img id="game__goal" src="./goal.jpg" alt="goal" />
-                <img id="game--voetbal" src="./voetbal.png" alt="" />
-                <div>
-                    <button id="game--shoot">Schiet</button>
-                    <button id="game--reset">Reset</button>
-                </div>
-                <p id="game--scoreBord" class='gameScore' >0</p>
+    <div id="game_wrapper">
+      <p id="game--goalText" class="game__goal__text1 hidden"></p>
+
+      <div class="game__container">
+        <div>
+          <a href="../changeTeam/changeTeam.html"><button id="play_game">Change team</button></a>
+
+          <img id="game__goal" src="./goal.jpg" alt="goal" />
+          <img id="game--voetbal" class="ball__animation" src="./voetbal.png" alt="" />
+          <div class='game__controls'>
+            <button id="game--shoot">Schiet</button>
+            <button id="game--reset">Reset</button>
+
+            <p id="game--scoreBord" class="gameScore">0</p>
+            <p id="game--scoreBord" class="gameScore">0</p>
+          </div>
         </div>
       </div>
     </div>
