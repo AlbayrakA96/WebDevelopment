@@ -42,3 +42,12 @@ header {
   height: 100vh;
   justify-content: space-around;
 }
+
+.hero__banner__image {
+  background: url(./background.gif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+ 
+}

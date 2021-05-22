@@ -39,7 +39,7 @@ init();
 const switchPlayer = function () {
   document.getElementById(`current--${activePlayer}`).textContent = 0;
   activePlayer = activePlayer === 0 ? 1 : 0;
-  currentScore = 0;
+  // currentScore = 0;
   player0El.classList.toggle('player--active');
   player1El.classList.toggle('player--active');
 };
@@ -56,10 +56,10 @@ btnRoll.addEventListener('click', function () {
 
     // 3. Check for rolled 1: if true, switch to next player
     if (dice !== 1) {
-      //   Add dice to current score
-      currentScore += dice;
-      document.getElementById(`current--${activePlayer}`).textContent =
-        currentScore;
+        //   Add dice to current score
+        currentScore += dice;
+        document.getElementById(`current--${activePlayer}`).textContent =
+          currentScore;
     } else {
       //   Switch to next player
       switchPlayer();
