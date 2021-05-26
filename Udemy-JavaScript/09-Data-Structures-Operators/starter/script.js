@@ -53,7 +53,7 @@ restaurant.orderDelivery({
   starterIndex: 1,
 });
 // ////////////////////////////////////////// Destructuring Objects //////////
-const { name, openingHours, categories } = restaurant;
+// const { name, openingHours, categories } = restaurant;
 // console.log(name, categories, openingHours);
 
 const {
@@ -61,26 +61,26 @@ const {
   openingHours: hours,
   categories: tags,
 } = restaurant;
-// console.log(restaurantName, hours, tags);
+console.log(restaurantName, hours, tags);
 
 // Default values
-const { menu = [], starterMenu: starters = [] } = restaurant;
-console.log(menu, starters);
+// const { menu = [], starterMenu: starters = [] } = restaurant;
+// console.log(menu, starters);
 
 // Mutating Variables
-let a = 111;
-let b = 999;
-let c = 1;
-const obj = { a: 23, b: 7, c: 14 };
+// let a = 111;
+// let b = 999;
+// let c = 1;
+// const obj = { a: 23, b: 7, c: 14 };
 
-({ a, b, c } = obj);
-console.log(a, b, c);
+// ({ a, b, c } = obj);
+// console.log(a, b, c);
 
-// Nested Objects
-const {
-  fri: { open, close },
-} = openingHours;
-console.log(open, close);
+// // Nested Objects
+// const {
+//   fri: { open, close },
+// } = openingHours;
+// console.log(open, close);
 /////////////////////////////////////// Destructuring Arrays ////////
 // const arr = [2, 3, 4];
 // const a = arr[0];
